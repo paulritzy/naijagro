@@ -1,0 +1,178 @@
+@import 'flaticon';
+@import 'als-ruble';
+@import 'base';
+@import '0-767';
+@import '768+';
+@import '992+';
+
+@media only screen and (min-width: 1200px) {
+	.to-basket{ font-size: 14px;}
+	
+	#btn-basket, #btn-authorized{
+		padding-left: 52px;
+	}
+
+	#btn-favorites{
+		padding-left: 30px;
+		.btn-content:before{
+			
+			display: block;
+		}
+	}
+
+	#btn-comparison{
+		padding-left: 30px;
+		.btn-content:before{
+			
+			
+			display: block;
+		}
+	}
+	
+	#big-banner{
+		height: 680px;
+		.slider-controls{ top: 650px;}
+	}
+
+	.main-page .main-menu{
+		margin-bottom: 350px;
+	}
+
+	.category{
+		padding-top: 100px;
+		img{ bottom: 75px;}
+	}/* .category */
+
+	.catalog-blocks{
+		.catalog-item{
+			.buy-actions{
+				.price-container{
+
+					margin-top: 6px;
+				}
+				.price{ font-size: 18px;}
+			}
+			
+		}
+	}
+	.catalog-list{
+		.review{
+			display: block;
+			margin-left: 0 !important;
+		}
+	}
+	.catalog-table{
+		.quantity{
+			display: inline-block !important;
+		}
+		.price-container{
+			margin-top: 8px !important;
+		}
+	}
+
+	.product{
+		.rating{
+			&>span{ 
+				font-size: 16px;
+			}
+		}
+		.recommended-item{
+			&:after{
+				top: 40px;
+			}
+
+		}/* .recommended-item */
+		
+		.recommended-items-price{
+			.special-price{
+				margin-top: 16px;
+			}
+			.price{ 
+				margin-bottom: 10px;
+			}
+			.to-basket{
+				font-size: 14px;
+			}/* .to-basket */
+		}/* .recommended-items-price */
+	}/* .product */
+
+	.sort-by{
+		button{
+			padding: 0 15px;
+		}
+	}/* .sort-by */
+
+	.paginator{ 
+		.to-start, .to-end{
+			display: inline-block;
+		}
+	}
+
+	.main-menu{
+		&>li>a{
+			font-size: 16px;
+		}
+	}/* .main-menu */
+}/* @media: 1200+ */
+
+
+
+
+@media only screen and (min-width: 1415px) {
+	/* online consultation button
+	if show it before - it will climb up content*/
+	.consultation{
+		display: block;
+		position: fixed;
+		z-index: 1000;
+		height: 38px;
+		width: 215px;
+		font-size: 16px;
+		left: 0;
+		bottom: 300px;
+		border: 1px solid;
+		border-left: none;
+
+		/* flaticon-comment2 */
+		&:before{
+			font-family: Flaticon;
+			font-weight: normal;
+			content: "\e00a";
+			margin-right: 15px;
+		}
+	}/* .consultation */
+	
+	@media only screen and (min-width: 1601px){
+		#big-banner{
+			height: 700px;
+			.slider-controls{ top: 670px;}
+		}
+
+		.main-page .main-menu{
+			margin-bottom: 370px;
+		}
+	}
+
+}/* @media 1415+ */
+
+@media only screen and (min-width: 1601px){
+	#big-banner{
+		height: 720px;
+		.slider-controls{ top: 690px;}
+	}
+
+	.main-page .main-menu{
+		margin-bottom: 390px;
+	}
+}
+
+@media only screen and (min-width: 1921px){
+	#big-banner{
+		height: 780px;
+		.slider-controls{ top: 750px;}
+	}
+
+	.main-page .main-menu{
+		margin-bottom: 450px;
+	}
+}

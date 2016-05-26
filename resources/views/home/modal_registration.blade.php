@@ -1,0 +1,59 @@
+<div id="modal-register" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<form method="post" action="#" class="form-registration">
+	<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#modal-register"></a>
+	<h2>Sign up</h2>
+	<div class="form-logo"></div>
+	<div class="radio-group">
+		<div>
+			<input type="radio" name="auto-generation" id="auto-generation" value="true" class="radio-styled">
+			<label for="auto-generation">Generate login and password</label>
+		</div>
+		<div>
+			<input type="radio" name="auto-generation" id="auto-generation-false" value="false" class="radio-styled" checked>
+			<label for="auto-generation-false">Set login and password</label>
+		</div>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="reg-username">Login</label>
+		<input type="text" name="reg-username" id="reg-username" placeholder="Username" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="reg-password">Password</label>
+		<input type="password" name="reg-password" id="reg-password" placeholder="Password" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="reg-password-repeat">Repeat password</label>
+		<input type="password" name="reg-password-repeat" id="reg-password-repeat" placeholder="Repeat password" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="email">E-mail</label>
+		<input type="email" name="email" id="email" placeholder="E-mail" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="first-name">Name</label>
+		<input type="text" name="first-name" id="first-name" placeholder="Name" class="textinput-styled">
+	</div>
+	<div class="textinput-wrapper">
+		<label for="last-name">Surname</label>
+		<input type="text" name="last-name" id="last-name" placeholder="Surname" class="textinput-styled">
+	</div>
+	<div class="anti-robot clearfix">
+		<div class="captcha"><img src="img/captcha.jpg" alt="Captcha"></div>
+		<div class="textinput-wrapper">
+			<input type="text" name="captcha" id="captcha" placeholder="Captcha" class="textinput-styled" required>
+			<label for="captcha">Captcha</label>
+		</div>
+	</div>
+	<div class="required-info"><span>*</span>Fields marked with asterisk are required</div>			
+	<div class="form-footer">
+		<div class="agreement-checkbox-wrapper">
+			<input type="checkbox" name="accept-agreement" id="accept-agreement" class="checkbox-styled">
+			<label for="accept-agreement">I agree with <a href="#">Store Terms and Conditions</a></label>
+		</div>
+		<input type="submit" value="Continue" name="reg-submit" id="reg-submit" class="main-btn">
+	</div>
+</form>
+	
+	</div>
+</div>

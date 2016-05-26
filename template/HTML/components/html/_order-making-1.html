@@ -1,0 +1,137 @@
+<div class="bcrumbs-container row">
+	<div class="col-sm-12">
+		<div class="bcrumbs">
+			<a href="main.html" class="home"></a>&rarr;
+			<a href="profile-settings.html">Personal Area</a>&rarr;
+			<a href="order-history.html" class="active">Checkout</a>
+		</div>
+	</div>
+</div>
+<div class="account row">
+	<section class="col-xs-12">
+		<h1>Your order:</h1>
+		<div class="basket-section-buttons">
+			<button class="basket-section selected active">Selected items</button>
+			<button class="basket-section laid-aside">Taked out items</button>
+		</div>
+		<? include('components/html/_order_details.html'); ?>
+		<div class="basket-bottom">
+			<form method="post" action="#" class="coupon">
+				<label>
+					<span class="label-text">
+						I have discount voucher:
+					</span>
+					<input type="text" class="textinput-styled">
+				</label>
+			</form>
+			<div class="buy-block clearfix">
+				<table class="total-info">
+					<tr class="total-weight">
+						<td>Total weight:</td>
+						<td><span class="totalweight">1290 g</td>
+					</tr>
+					<tr>
+						<td>Goods worth:</td>
+						<td><span class="totalprice1">$225</span></td>
+					</tr>
+					<tr>
+						<td>VAT:</td>
+						<td><span class="vat">$0</td>
+					</tr>
+					<tr>
+						<td>Discount:</td>
+						<td><span class="totalprice1">$225</span></td>
+					</tr>
+					<tr class="total-of-total">
+						<td>Total to pay:</td>
+						<td><span class="total-price2">$1</span></td>
+					</tr>
+				</table>
+				<a href="order-making-2.html" class="main-btn"><span class="btn-text">Checkout</span></a>
+			</div><!-- /buy-block -->
+		</div><!-- /basket-bottom -->
+	</section>
+</div>
+<!-- IMPORTANT NOTICE! Since login and registration forms are already presented on the page, 2 forms below should have different IDs. Therefore postfix "-clone" is added to all attributes -->
+<div class="account row">
+	<h3 class="to-continue">Please sign in or sign up to continue processing your order:</h3>
+	<div class="col-md-4 col-xs-12">
+		<form method="post" action="#" class="form-login order-making-form">
+			<h2>Sign in</h2>
+			<div class="form-logo"></div>
+			<div class="textinput-wrapper">
+				<label for="login-username-clone">Username</label>
+				<input type="text" name="login-username" id="login-username-clone" placeholder="Username" class="textinput-styled" required>
+			</div>
+			<div class="textinput-wrapper">
+				<label for="login-password-clone">Password</label>
+				<input type="password" name="login-password" id="login-password-clone" placeholder="Password" class="textinput-styled" required>
+			</div>
+			<div class="remember-container">
+				<input type="checkbox" name="remember" id="remember-clone" class="checkbox-styled">
+				<label for="remember-clone">Remember me</label>
+				<br><a href="#" class="forgot-pass">Forgot password?</a>
+			</div>
+			<div class="form-footer">
+				<input type="submit" value="Continue" name="login-submit" id="login-submit-clone" class="main-btn">
+			</div>
+		</form>
+	</div><!-- .col-md-4 -->
+	<div class="col-md-5 col-md-offset-1 col-xs-12">
+
+			<form method="post" action="#" class="form-registration order-making-form">
+				<h2>Sign up</h2>
+				<div class="form-logo"></div>
+				<div class="radio-group">
+					<div>
+						<input type="radio" name="auto-generation" id="auto-generation-clone" value="true" class="radio-styled">
+						<label for="auto-generation-clone">Generate login and password</label>
+					</div>
+					<div>
+						<input type="radio" name="auto-generation" id="auto-generation-false-clone" value="false" class="radio-styled" checked>
+						<label for="auto-generation-false-clone">Set login and password</label>
+					</div>
+				</div>
+				<div class="textinput-wrapper">
+					<label for="reg-username-clone">Login</label>
+					<input type="text" name="reg-username" id="reg-username-clone" placeholder="Username" class="textinput-styled" required>
+				</div>
+				<div class="textinput-wrapper">
+					<label for="reg-password-clone">Password</label>
+					<input type="password" name="reg-password" id="reg-password-clone" placeholder="Password" class="textinput-styled" required>
+				</div>
+				<div class="textinput-wrapper">
+					<label for="reg-password-repeat-clone">Repeat password</label>
+					<input type="password" name="reg-password-repeat" id="reg-password-repeat-clone" placeholder="Repeat password" class="textinput-styled" required>
+				</div>
+				<div class="textinput-wrapper">
+					<label for="email-clone">E-mail</label>
+					<input type="email" name="email" id="email-clone" placeholder="E-mail" class="textinput-styled" required>
+				</div>
+				<div class="textinput-wrapper">
+					<label for="first-name-clone">Name</label>
+					<input type="text" name="first-name" id="first-name-clone" placeholder="Name" class="textinput-styled">
+				</div>
+				<div class="textinput-wrapper">
+					<label for="last-name-clone">Surname</label>
+					<input type="text" name="last-name" id="last-name-clone" placeholder="Surname" class="textinput-styled">
+				</div>
+				<div class="anti-robot clearfix">
+					<div class="captcha"><img src="img/captcha.jpg" alt="Captcha"></div>
+					<div class="textinput-wrapper">
+						<input type="text" name="captcha" id="captcha-clone" placeholder="Captcha" class="textinput-styled" required>
+						<label for="captcha-clone">Captcha</label>
+					</div>
+				</div>
+				<div class="required-info"><span>*</span>Fields marked with asterisk are required</div>			
+				<div class="form-footer">
+					<div class="agreement-checkbox-wrapper">
+						<input type="checkbox" name="accept-agreement" id="accept-agreement-clone" class="checkbox-styled">
+						<label for="accept-agreement-clone">I agree <a href="#">Store Terms and Conditions</a></label>
+					</div>
+					<input type="submit" value="Continue" name="reg-submit" id="reg-submit-clone" class="main-btn">
+				</div>
+			</form>
+		
+	</div><!-- .col-sm-5 -->
+</div>

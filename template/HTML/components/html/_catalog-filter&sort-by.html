@@ -1,0 +1,82 @@
+<div class="catalog-filter clearfix">
+	<form action="#" method="post" id="catalog-filter-form">
+		<div class="filter-item selector brand">
+			<label>Brand:</label>
+			<div class="select">
+				<input type="text" class="selector-input" disabled>
+				<ul class="selector-list">
+					<li class="active">Brand 1</li>
+					<li>Brand 2</li>
+					<li>Brand 3</li>
+					<li>Brand 4</li>
+					<li>Brand 5</li>
+					<li>Brand 6</li>
+					<li>Brand 7</li>
+					<li>Brand 8</li>
+					<li>Brand 9</li>
+					<li>Brand 10</li>
+				</ul><!-- .selector-list -->
+			</div><!-- .select -->
+		</div><!-- .filter-item.selector.brand -->
+		<div class="filter-item selector manufacturer"><label>Manufacturer:</label>
+			<div class="select">
+				<input type="text" class="selector-input" disabled>
+				<ul class="selector-list">
+					<li class="active">Manufacturer 1</li>
+					<li>Manufacturer 2</li>
+					<li>Manufacturer 3</li>
+					<li>Manufacturer 4</li>
+					<li>Manufacturer 5</li>
+					<li>Manufacturer 6</li>
+					<li>Manufacturer 7</li>
+					<li>Manufacturer 8</li>
+					<li>Manufacturer 9</li>
+					<li>Manufacturer 10</li>
+				</ul>
+			</div><!-- .select -->
+		</div><!-- .filter-item.selector.manufacturer -->
+		<div class="filter-item selector weight"><label>Weight:</label>
+			<div class="select">
+				<input type="text" class="selector-input" disabled>
+				<ul class="selector-list">
+					<li class="active">100 g</li>
+					<li>200 g</li>
+					<li>300 g</li>
+					<li>500 g</li>
+					<li>1 kg</li>
+				</ul>
+			</div><!-- .select -->
+		</div><!-- .filter-item.selector.weight -->
+		<div class="filter-item checkboxes">
+			<input type="checkbox" name="hit" id="hit" class="checkbox-styled">
+			<label for="hit">Hit</label>
+			<input type="checkbox" name="new" id="new" class="checkbox-styled">
+			<label for="new">New</label>
+			<input type="checkbox" name="in-stock" id="in-stock" class="checkbox-styled" checked>
+			<label for="in-stock">Available</label>
+		</div><!-- .filter-item.checkboxes -->
+		
+		<div class="filter-item price-range">
+			<label>Price range:</label>
+			<div class="price-range-slider"></div>
+			<div class="min-price-wrapper">
+				<input type="number" name="min-price" id="min-price" class="min-price" hidden>
+				<label for="min-price" class="price">$</label>
+			</div>
+			<span class="spacer">&ndash;</span>
+			<div class="max-price-wrapper">
+				<input type="number" name="max-price" id="max-price" class="max-price" hidden>
+				<label for="max-price" class="price">$</label>
+			</div>
+		</div>
+		<button class="reset"><span class="text">Reset parameters</span></button>
+	</form>
+</div><!-- /catalog-filter -->
+<div class="sort-by">
+	<span class="text">Sort by:</span>
+	<button class="sort-by-price active"><span class="text">price</span></button>
+	<button class="sort-by-name"><span class="text">name</span></button>
+	<button class="sort-by-popularity"><span class="text">popularity</span></button>
+	<button class="sort-by-sales"><span class="text">sales</span></button>
+	<button class="sort-by-rating"><span class="text">rating</span></button>
+</div><!-- /sort-by -->

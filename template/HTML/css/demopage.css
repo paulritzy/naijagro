@@ -1,0 +1,105 @@
+.site-header {
+  margin-top: 0;
+  background: #25303B;
+  /*height: 150px;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.logotip {
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logotip a {
+  color: #fff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  line-height: 40px;
+  display: inline-block;
+  padding-right: 52px;
+  text-decoration: none;
+}
+.logotip a:visited,
+.logotip a:active,
+.logotip a:link {
+  color: #fff;
+}
+.logotip a img {
+  position: absolute;
+  bottom: 15px;
+  right: -10px;
+  top: 11px;
+}
+.logotip a strong.logo-first-row {
+  font-size: 36px;
+  right: 53px;
+  position: absolute;
+}
+.demopage {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: #f9f9f9;
+}
+.demopage .logo-block {
+  margin-bottom: 25px;
+}
+.demopage .col-xs-6 img,
+.demopage .col-md-4 img {
+  width: 100%;
+}
+.demopage .col-md-4 {
+  margin-bottom: 20px;
+}
+.demopage .thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  position: relative;
+  text-align: center;
+}
+.demopage .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: #2c2c2c;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.4s;
+  vertical-align: middle;
+  line-height: 215px;
+}
+.demopage .cover i {
+  vertical-align: middle;
+  color: white;
+  font-size: 3em;
+}
+.demopage .cover:hover {
+  opacity: 0.5;
+}
+.demopage .effect a {
+  color: #25303B;
+  font-weight: 500;
+  text-decoration: none;
+}
+.demopage .effect a:hover {
+  text-decoration: underline;
+}
+.demopage .effect a:visited {
+  color: #757575;
+}

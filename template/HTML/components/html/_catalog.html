@@ -1,0 +1,82 @@
+<div class="bcrumbs-container row">
+	<div class="col-sm-12">
+		<div class="bcrumbs">
+			<a href="main.html" class="home"></a>&rarr;
+			<a href="#">Items</a>&rarr;
+			<a href="#">Sauces and spices</a>&rarr;
+			<a href="#" class="active">For Meat and Poultry</a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<aside class="col-sm-3 col-xs-12">
+		<? include('components/html/_catalog-menu.html'); ?>
+	</aside>
+	<div class="col-sm-9 col-xs-12">
+		<h2 class="catalog-header">For Meat and Poultry</h2>
+		<? include('components/html/_catalog-filter&sort-by.html'); ?>
+		<div class="view-options">
+			<span class="view-mode">
+				<span class="text">View:</span>
+				<a href="#" class="v-blocks" title="View: blocks"></a>
+				<a href="#" class="v-list" title="View: list"></a>
+				<a href="#" class="v-table active" title="View: table"></a>
+			</span>
+			<div class="selector group-by"><label>Show by:</label>
+				<div class="select">
+					<input type="text" class="selector-input" disabled>
+					<ul class="selector-list">
+						<li class="active">12</li>
+						<li>24</li>
+						<li>36</li>
+						<li>48</li>
+						<li>60</li>
+					</ul>
+				</div>
+			</div>
+			<span class="paginator">
+				<a href="#" class="to-start default disabled">Begin</a>
+				<a href="#" class="flaticon-arrow133 default disabled"></a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#" class="active">3</a>
+				<a href="#">..</a>
+				<a href="#">11</a>
+				<a href="#">12</a>
+				<a href="#" class="flaticon-right20 default"></a>
+				<a href="#" class="to-end">End</a>
+			</span><!-- /paginator -->
+		</div><!-- /view-options -->
+		<div class="catalog-table row3 viewer">
+			<? 	for ($i = 0; $i < 2; $i++){
+					include('components/html/catalog-items-example2.html');
+				} ?>
+		</div><!-- /catalog-blocks row3 -->
+		<div class="view-options">
+			<div class="selector group-by"><label>Show by:</label>
+				<div class="select">
+					<input type="text" class="selector-input" disabled>
+					<ul class="selector-list">
+						<li class="active">12</li>
+						<li>24</li>
+						<li>36</li>
+						<li>48</li>
+						<li>60</li>
+					</ul>
+				</div>
+			</div>
+			<span class="paginator">
+				<a href="#" class="to-start default disabled">Begin</a>
+				<a href="#" class="flaticon-arrow133 default disabled"></a>
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#" class="active">3</a>
+				<a href="#">..</a>
+				<a href="#">11</a>
+				<a href="#">12</a>
+				<a href="#" class="flaticon-right20 default"></a>
+				<a href="#" class="to-end">End</a>
+			</span><!-- /paginator -->
+		</div><!-- /view-options -->
+	</div>
+</div>

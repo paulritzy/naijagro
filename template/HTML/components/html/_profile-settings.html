@@ -1,0 +1,118 @@
+<div class="bcrumbs-container row">
+	<div class="col-sm-12">
+		<div class="bcrumbs">
+			<a href="main.html" class="home"></a>&rarr;
+			<a href="profile-settings.html">Personal Area</a>&rarr;
+			<a href="order-history.html" class="active">Profile settings</a>
+		</div>
+	</div>
+</div>
+<div class="account row">
+	<h1>Personal Area</h1>
+	<aside class="account-menu col-sm-3 col-xs-12">
+		<div class="profile clearfix">
+			<div class="avatar"><img src="img/icons/avatar.png" alt="User photo (avatar)" title="User photo (avatar)"></div>
+			<span class="name">John Doe</span><br><span class="login">[romza@mail.ru]</span><br>(<a href="main.html">Log out</a>)
+		</div><!-- /profile -->
+		<ul>
+			<li><a href="profile-settings.html" class="active">Profile settings</a></li>
+			<li><a href="order-history.html">Orders history</a></li>
+			<li><a href="subscribe-settings.html">Subscription settings</a></li>
+			<li><a href="favorites.html">Favorites</a></li>
+		</ul>
+	</aside><!-- /account-menu -->
+	<section class="account-content col-sm-9 col-xs-12">
+		<h2>Profile settings</h2>
+		<form action="#" method="post" class="form-profile-settings">
+			<div class="input-wrapper">
+				<input type="text" name="nickname" id="nickname" class="textinput-styled">
+				<label for="nickname">Change login:</label>
+			</div>
+			<div class="input-wrapper">
+				<input type="password" name="password" id="password" class="textinput-styled">
+				<label for="password">Change password:</label>
+			</div>
+			<div class="input-wrapper">
+				<input type="email" name="settings-email" id="settings-email" class="textinput-styled">
+				<label for="settings-email">Change e-mail:</label>
+			</div>
+			<div class="input-wrapper">
+				<input type="date" name="birthdate" id="birthdate" class="textinput-styled">
+				<label for="birthdate">Birthday:</label>
+			</div>
+			<div class="settings-list">
+				<label for="phone">Phone:</label>
+				<ul class="phone-list">
+					<li class="phone clearfix">
+						<span>+1 234 567 8901</span>
+						<div class="item-actions">
+							<a href="#">Remove</a> | 
+							<span class="add">+</span><a href="#">add</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<input type="tel" name="phone" id="phone" class="textinput-styled short">
+			<button class="add main-btn">+</button>
+			<div class="settings-list">
+				<label for="delivery-address">Delivery address:</label>
+				<ul class="address-list">
+					<li class="address clearfix">
+						<span class="address">Krasnoyarsk, Vavilova str., 49V</span>
+						<div class="item-actions">
+							<a href="#">Remove</a> | 
+							<span class="add">+</span><a href="#">add</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<input type="text" name="delivery-address" id="delivery-address" class="textinput-styled short">
+			<button class="add main-btn">+</button>
+			
+			<div class="avatar clearfix">
+				<label for="avatar">Your photo:</label>
+				<div class="img-container">
+					<img src="img/icons/avatar.png" alt="User photo (avatar)" title="User photo (avatar)">
+				</div>
+				<div class="fileinput-styled">
+					<label for="avatar" class="main-btn">Choose file</label>
+					<input type="file" name="avatar" id="avatar"><br>
+					<span id="chosen-file">*File is not choosen</span>
+					<label class="bx-input-file-desc file-delete">
+						<input type="checkbox" name="PERSONAL_PHOTO_del" value="Y" id="PERSONAL_PHOTO_del">
+						<span class="label-text">Remove file</span>
+					</label>
+				</div>
+			</div>
+			<div class="settings-list">
+				<label>Social network:</label>
+				<ul class="social-list">
+					<li>
+						<a href="#" class="social vk sprite"><span class="icon-container sprite"></span></a>
+						<div class="item-actions">
+							<a href="#">unlink</a>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="social fb sprite"><span class="icon-container sprite"></span></a>
+						<div class="item-actions">
+							<a href="#">unlink</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="settings-list">
+				<label>Link account:</label>
+				<ul class="social-list all-socials">
+					<li><a href="#" class="social tw"><span class="icon-container sprite"></span></a></li>
+					<li><a href="#" class="social vk"><span class="icon-container sprite"></span></a></li>
+					<li><a href="#" class="social ok"><span class="icon-container sprite"></span></a></li>
+				</ul>
+			</div>
+			<div class="form-footer">
+				<input type="submit" name="submit-profile-settings" value="Save" class="main-btn">
+			</div>
+			
+		</form>
+	</section><!-- /account-content -->
+</div><!-- /row -->

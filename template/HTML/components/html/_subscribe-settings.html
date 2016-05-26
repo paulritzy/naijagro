@@ -1,0 +1,43 @@
+<div class="bcrumbs-container row">
+	<div class="col-sm-12">
+		<div class="bcrumbs">
+			<a href="main.html" class="home"></a>&rarr;
+			<a href="profile-settings.html">Personal Area</a>&rarr;
+			<a href="order-history.html" class="active">Subscription settings</a>
+		</div>
+	</div>
+</div>
+<div class="account row">
+	<h1>Personal Area</h1>
+	<aside class="account-menu col-sm-3 col-xs-12">
+		<div class="profile clearfix">
+			<div class="avatar"><img src="img/icons/avatar.png" alt="User photo (avatar)" title="User photo (avatar)"></div>
+			<span class="name">John Doe</span><br><span class="login">[romza@mail.ru]</span><br>(<a href="main.html">Log out</a>)
+		</div><!-- /profile -->
+		<ul>
+			<li><a href="profile-settings.html">Profile settings</a></li>
+			<li><a href="order-history.html">Orders history</a></li>
+			<li><a href="subscribe-settings.html" class="active">Subscription settings</a></li>
+			<li><a href="favorites.html">Favorites</a></li>
+		</ul>
+	</aside><!-- /account-menu -->
+	<section class="account-content col-sm-9 col-xs-12">
+		<h2>Subscription settings</h2>
+		<form action="#" method="post" class="form-subscribe-settings">
+			<div>
+				<input type="email" name="settings-email" id="settings-email" class="textinput-styled">
+				<label for="settings-email">Your E-mail:</label>
+			</div>
+			<div>
+				<input type="checkbox" name="news" id="news" class="checkbox-styled">
+				<label for="news">Store news</label>
+			</div>
+			<div>
+				<input type="checkbox" name="specials" id="specials" class="checkbox-styled">
+				<label for="specials">New and promotions</label>
+			</div>
+			<input type="submit" name="submit-subscribe" value="Sign in" class="main-btn">
+		</form>
+	</section><!-- /account-content -->
+</div><!-- /row -->
+

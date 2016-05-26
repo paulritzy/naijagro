@@ -1,0 +1,635 @@
+<div class="row big-header">
+<nav class="site-nav">
+	<span class="flaticon-menu26 xs-menu-btn toggler"></span>
+	<div class="col-sm-9 col-xs-12">
+		<ul class="site-nav toggleable">
+			<li class="active"><a href="main.html">Main</a></li>
+			<li><a href="catalog.html">Store</a></li>
+			<li class='expandable xs-only'><a href="#">Blog</a>
+				<ul class="site-nav-submenu expand-content">
+					<li><a href="#">How to pay</a></li>
+					<li><a href="#" class="active">How to Order</a></li>
+					<li><a href="#">How to Receive Order</a></li>
+					<li><a href="#">Return Policy</a></li>
+					<li><a href="#">Promo and Discount Cards</a></li>
+				</ul>
+			</li>
+			<li class="expandable xs-only"><a href="#">Shipping and Payment</a>
+				<ul class="site-nav-submenu expand-content">
+					<li><a href="#">How to pay</a></li>
+					<li><a href="#">How to Order</a></li>
+					<li><a href="#" class="active">How to Receive Order</a></li>
+					<li><a href="#">Return Policy</a></li>
+					<li><a href="#">Promo and Discount Cards</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contacts</a></li>
+			<li><a href="template-page.html">Information</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-3 hidden-xs">
+		<ul class="socials">
+			<li><a href="#" class="social tw sprite"></a></li>
+			<li><a href="#" class="social fb sprite"></a></li>
+			<li><a href="#" class="social youtube sprite"></a></li>
+			<li><a href="#" class="social skype sprite"></a></li>
+			<li><a href="#" class="social vk sprite"></a></li>
+		</ul>
+	</div>
+</nav><!-- /site-nav -->
+<header class="site-header">
+	<div class="col-sm-8 col-xs-6">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<a href="main.html" class="logo">
+					<strong class="logo-first-row" style="font-size: 37px;">FOOD&</strong>
+					<br>HOME
+					<img src="img/icons/logo_icon.png" alt="Online Store" style="position: absolute; right: -10px; top: 18px">
+				</a>
+				<div class="link-dropdown" data-toggle="modal" data-target="#city-switcher">
+					<a href="#">Krasnoyarsk</a>
+				</div>	
+				<form action="#" method="post" class="form-search">
+					<label for="search-field" class="toggle-search"></label>
+					<div class="search-wrap">
+						<input type="search" name="search-field" id="search-field" placeholder="I search for...">
+						<label for="submit-search" class="btn-search"></label>
+
+						<? include "components/html/popup_ajax-search.html"; ?>
+					</div>
+					<input type="submit" value="" name="submit-search" id="submit-search">
+				</form>
+			</div>
+			<div class="delivery col-sm-6 col-xs-12">
+				<span class="text">Orders Reception:</span>
+				<span class="phone">
+					<a href="tel:+1-234-567-89-01">+1 (234) <span class="phone-short">567-89-01</span></a>
+				</span><br>
+				<span class="email">
+					<a href="mailto:onlinestore@mail.ru">foodstore@online.com</a>
+				</span>
+			</div><!-- /delivery -->
+		</div><!-- /row -->
+	</div><!-- /col-sm-8 -->
+	<!-- switching between styles via toggling class "not-authorized" -->
+	<div class="account-controls col-sm-4 col-xs-6">
+		<div class="not-authorized">
+			<div class="logged-in">
+				<button id="btn-authorized">
+					<span class="btn-content">
+						<span class="text">Personal Area:</span>
+						<span class="authorized-user">John Doe</span>
+					</span>
+				</button>
+				<button id="btn-logout"></button>
+			</div>
+			<button id="btn-login" data-toggle="modal" data-target="#modal-login"><span class="btn-content"><span class="btn-text">Sign in</span></span></button>
+		</div>
+		<div class="not-authorized">
+			<button id="btn-reg" data-toggle="modal" data-target="#modal-register"><span class="btn-content"><span class="btn-text">Sign up</span></span></button>
+		</div>
+		
+		<div class="basket-container">
+			<button id="btn-basket" class="main-btn">
+				<span class="btn-content">
+				<span class="btn-text">Cart:</span>
+				<span class="basket-data">
+					<span class="goods-number">0</span> items <span class="hidden-xs">-</span> <span class="price price-total">$0.00</span>
+				</span>
+				</span>
+			</button>
+			<? include('components/html/popup_basket.html'); ?>
+		</div><!-- /basket-container -->
+		<a href="favorites.html" id="btn-favorites">
+			<span class="btn-content">
+				<span class="btn-text">Favorites</span>
+				(<span class="favorites-quantity">4</span>)
+			</span>
+		</a>
+		<a href="compare.html" id="btn-comparison">
+			<span class="btn-content">
+				<span class="btn-text">Comparison List</span>
+				(<span class="favorites-quantity">2</span>)
+			</span>
+		</a>
+	</div>
+</header><!-- /site-header -->
+</div><!-- /row -->
+<button class="main-menu-toggle"><span class="text">Items Catalog</span></button>
+<nav class="main row">
+	<ul class="main-menu clearfix">
+		<li class="expandable xs-only">
+			<a href="catalog.html">Items</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Children's goods</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Beauty & Personal Care</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Domestic chemistry</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Home and Garden</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Domestic chemistry</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Domestic chemistry</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+	</ul><!-- /main-menu -->
+</nav><!-- /main -->
+
+<!-- popups and modals-->
+
+<? include('components/html/modal_login.html'); ?>
+<? include('components/html/modal_registration.html'); ?>
+
+
+
+<button class="color-switch-toggle"><span class="glyphicon glyphicon-cog"></span></button>
+
+
+
+<div class="modal" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="success-modal" aria-hidden="true">
+		<div class="form-success">
+			<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#success-modal"></a>
+			<span class="glyphicon glyphicon-ok"></span>
+			Sign up successful
+		</div>
+</div>
+<div class="modal" id="fail-modal" tabindex="-1" role="dialog" aria-labelledby="fail-modal" aria-hidden="true">
+		<div class="form-fail">
+			<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#fail-modal"></a>
+			<span class="glyphicon glyphicon-ban-circle"></span>
+			Attention! There is a mistake!
+		</div>
+</div>
+
+<div class="modal fade" id="color-switcher" tabindex="-1" role="dialog" aria-labelledby="color-switcher" aria-hidden="true">
+	<div class="modal-dialog">
+		<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#color-switcher"></a>
+		<h3>Settings Panel</h3>
+		<p>Choose Color Scheme:</p>
+		<div class="theme-demo aurora" data-theme='aurora'>Aurora</div>
+		<div class="theme-demo bluesky" data-theme='bluesky'>Bluesky</div>
+		<div class="theme-demo fresh" data-theme='fresh'>Fresh</div>
+		<div class="theme-demo honey" data-theme='honey'>Honey</div>
+		<div class="theme-demo violet" data-theme='violet'>Violet</div>
+		<hr>
+		<button class="btn-close-modal main-btn" data-toggle="modal" data-target="#color-switcher">OK</button>
+	</div>
+</div>
+<div class="modal fade" id="city-switcher" tabindex="-1" role="dialog" aria-labelledby="city-switcher" aria-hidden="true">
+	<div class="modal-dialog">
+		<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#city-switcher"></a>
+		<h3>Please select a city:</h3>
+		<p>Now selected: <span class="current-city">Krasnoyarsk</span></p>
+		<ul>
+			<li><span>Los Angeles</span>
+			</li><li><span>New York</span>
+			</li><li class="active"><span>Krasnoyarsk</span>
+			</li><li><span>Chelsea</span>
+			</li><li><span>Ostin</span>
+			</li><li><span>Memphis</span>
+			</li><li><span>Washington, DC</span>
+			</li><li><span>London</span>
+			</li><li><span>Helsinki</span>
+			</li><li><span>Toronto</span>
+			</li><li><span>San Francisco</span>
+			</li><li><span>New Dely</span>
+			</li><li><span>Istambul</span>
+			</li><li><span>Kiev</span>
+			</li><li><span>Minsk</span>
+			</li><li><span>Novosibirsk</span>
+			</li><li><span>Moscow</span>
+			</li><li><span>Berlin</span>
+			</li><li><span>Praga</span>
+			</li><li><span>Athens</span></li>
+			<!-- Attention! There is must not be spacing between previous block closing tag
+			and next block opening tag!
+			 -->
+		</ul>
+		<hr>
+		<button class="btn-close-modal main-btn" data-toggle="modal" data-target="#city-switcher">OK</button>
+	</div>
+</div>

@@ -1,0 +1,130 @@
+<div class="bcrumbs-container row">
+	<div class="col-sm-12">
+		<div class="bcrumbs">
+			<a href="main.html" class="home"></a>&rarr;
+			<a href="profile-settings.html">Personal Area</a>&rarr;
+			<a href="order-history.html" class="active">Checkout</a>
+		</div>
+	</div>
+</div>
+<div class="account row">
+	<div class="col-xs-12">
+		<h1>Checkout</h1>
+		<form method="post" action="#" class="form-order">
+			<h2>Payer Type</h2>
+			<input type="radio" name="payer-type" id="payer-type-physical" value="physical-person" checked class="radio-styled">
+			<label for="payer-type-physical">Individual</label>
+			<input type="radio" name="payer-type" id="payer-type-juridical" value="juridical-person" class="radio-styled">
+			<label for="payer-type-juridical">Entity</label>
+			<h2>Payment and Delivery Information</h2>
+			<div class="selector delivery-info"><label>Select the previously specified information:</label>
+				<div class="select">
+					<input type="text" class="selector-input" disabled>
+					<ul class="selector-list">
+						<li class="active">Krasnoyarsk, Vavilova str., 49V</li>
+					</ul>
+				</div>
+			</div>
+			<h2>Customer Information <a href="#" class="buyer-info-toggle">Show</a></h2>
+			<div class="buyer-info">
+				<div style="margin-bottom: 10px">
+					<input type="radio" name="radio-example" id="radio-example" value="example1" class="radio-styled">
+					<label for="radio-example">Radio button 1</label>
+					<input type="radio" name="radio-example" id="radio-example2" value="example1" class="radio-styled">
+					<label for="radio-example2">Radio button 2</label>
+				</div>
+				<div style="margin-bottom: 10px">
+					<div class="selector"><label>And this is select:</label>
+						<div class="select">
+							<input type="text" class="selector-input" disabled>
+							<ul class="selector-list">
+								<li class="active">Option 1</li>
+								<li>Option 2</li>
+								<li>Option 3</li>
+								<li>Option 4</li>
+								<li>Option 5</li>
+								<li>Option 6</li>
+								<li>Option 7</li>
+								<li>Option 8</li>
+								<li>Option 9</li>
+								<li>Option 10</li>
+							</ul>
+						</div><!-- /select -->
+					</div><!-- /selector -->
+				</div>
+				<div style="margin-bottom: 10px">
+					<input type="checkbox" name="hit" id="hit" class="checkbox-styled">
+					<label for="hit">I'm checkbox!</label><br>
+					<input type="checkbox" name="new" id="new" class="checkbox-styled">
+					<label for="new">And I'm checkbox!</label><br>
+					<input type="checkbox" name="in-stock" id="in-stock" class="checkbox-styled" checked>
+					<label for="in-stock">I'm the most-most checkbox!</label>
+				</div>
+				<div style="margin-bottom: 10px">
+					<input type="text" class="textinput-styled" placeholder="Text field">
+				</div>
+				<div style="margin-bottom: 10px">
+					<textarea name="textarea-example" id="textarea-example" class="textarea-styled"></textarea>
+				</div>
+			</div>
+			<h2>Delivery Type</h2>
+			<div class="delivery-type row">
+				<input type="radio" name="delivery-type" id="delivery-type-courier">
+				<label for="delivery-type-courier" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img"><img src="img/icons/delivery-type-courier.png" alt="Courier shipping"></span>
+					<span class="radio-item-header">Courier shipping</span>
+					<span class="radio-item-text">From $15<br>Delivery is carried out during the day at a convenient time for you.</span>
+				</label>
+				<input type="radio" name="delivery-type" id="delivery-type-self">
+				<label for="delivery-type-self" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img"><img src="img/icons/delivery-type-self.png" alt="Pickup"></span>
+					<span class="radio-item-header">Pickup</span>
+					<span class="radio-item-text">Free<br>You are free to pick up the order from our shop</span>
+				</label>
+			</div>
+			<h2>Payment System</h2>
+			<div class="payment-system-type row">
+				<input type="radio" name="payment-system" id="payment-system-cash">
+				<label for="payment-system-cash" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img"><img src="img/icons/payment-cash.png" alt="Cash to courier"></span>
+					<span class="radio-item-header">Cash to courier</span>
+				</label>
+				<input type="radio" name="payment-system" id="payment-system-credit-card">
+				<label for="payment-system-credit-card" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img"><img src="img/icons/payment-credit-card.png" alt="Debit/Credit card"></span>
+					<span class="radio-item-header">Debit/Credit card</span>
+				</label>
+				<input type="radio" name="payment-system" id="payment-system-webmoney">
+				<label for="payment-system-webmoney" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img payment-webmoney"><img src="img/icons/payment-webmoney.png" alt="Pay System 1"></span>
+					<span class="radio-item-header">Pay System 1</span>
+				</label>
+				<input type="radio" name="payment-system" id="payment-system-yamoney">
+				<label for="payment-system-yamoney" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img"><img src="img/icons/payment-yamoney.png" alt="Pay System 2"></span>
+					<span class="radio-item-header">Pay System 2</span>
+				</label>
+				<input type="radio" name="payment-system" id="payment-system-sber">
+				<label for="payment-system-sber" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img"><img src="img/icons/payment-sber.png" alt="Pay System 3"></span>
+					<span class="radio-item-header">Pay System 3</span>
+				</label>
+				<input type="radio" name="payment-system" id="payment-system-credit">
+				<label for="payment-system-credit" class="radio-item col-sm-2 col-xs-6">
+					<span class="radio-img"><img src="img/icons/payment-credit.png" alt="Buy for a credit"></span>
+					<span class="radio-item-header">Buy for a credit</span>
+				</label>
+			</div>
+			<h2>Order Composition</h2>
+			<? include('components/html/_order_details.html'); ?>
+			<div class="basket-bottom">
+				<span class="total-weight">Total weight: <span class="weight">100 g</span></span>
+				<span class="total-price">Total: <span class="price">$25</span></span>
+			</div>
+			<h2>Additional order information:</h2>
+			<label>Comments to order:</label><br>
+			<textarea name="order-comments" id="order-comments" class="textarea-styled"></textarea>
+			<a href="order-making-3.html" class="make-order main-btn">Submit</a>
+		</form><!-- /form-order -->
+	</div><!-- /col-xs-12 -->
+</div><!-- /account -->

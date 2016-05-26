@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ONLINE STORE - Food eShop</title>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/themes/theme_aurora.css" class="current-theme">
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.js"></script>	
+
+	<script src="js/jquery.mobile-events.min.js"></script>
+	<script src="js/jquery.nouislider.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.tipTip.minified.js"></script>
+
+	<script src="js/my-scripts.js"></script>
+
+	<!-- Respond.js - IE8 support of media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="selectivizr-min.js"></script>
+    	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head><body>
+	<div class="bitrix-admin-panel"></div>
+	<div class="page-wrapper">
+		<div class="container">
+			<div class="row big-header">
+<nav class="site-nav">
+	<span class="flaticon-menu26 xs-menu-btn toggler"></span>
+	<div class="col-sm-9 col-xs-12">
+		<ul class="site-nav toggleable">
+			<li class="active"><a href="main.html">Main</a></li>
+			<li><a href="catalog.html">Store</a></li>
+			<li class='expandable xs-only'><a href="#">Blog</a>
+				<ul class="site-nav-submenu expand-content">
+					<li><a href="#">How to pay</a></li>
+					<li><a href="#" class="active">How to Order</a></li>
+					<li><a href="#">How to Receive Order</a></li>
+					<li><a href="#">Return Policy</a></li>
+					<li><a href="#">Promo and Discount Cards</a></li>
+				</ul>
+			</li>
+			<li class="expandable xs-only"><a href="#">Shipping and Payment</a>
+				<ul class="site-nav-submenu expand-content">
+					<li><a href="#">How to pay</a></li>
+					<li><a href="#">How to Order</a></li>
+					<li><a href="#" class="active">How to Receive Order</a></li>
+					<li><a href="#">Return Policy</a></li>
+					<li><a href="#">Promo and Discount Cards</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contacts</a></li>
+			<li><a href="template-page.html">Information</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-3 hidden-xs">
+		<ul class="socials">
+			<li><a href="#" class="social tw sprite"></a></li>
+			<li><a href="#" class="social fb sprite"></a></li>
+			<li><a href="#" class="social youtube sprite"></a></li>
+			<li><a href="#" class="social skype sprite"></a></li>
+			<li><a href="#" class="social vk sprite"></a></li>
+		</ul>
+	</div>
+</nav><!-- /site-nav -->
+<header class="site-header">
+	<div class="col-sm-8 col-xs-6">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<a href="main.html" class="logo">
+					<strong class="logo-first-row" style="font-size: 37px;">FOOD&</strong>
+					<br>HOME
+					<img src="img/icons/logo_icon.png" alt="Online Store" style="position: absolute; right: -10px; top: 18px">
+				</a>
+				<div class="link-dropdown" data-toggle="modal" data-target="#city-switcher">
+					<a href="#">Krasnoyarsk</a>
+				</div>	
+				<form action="#" method="post" class="form-search">
+					<label for="search-field" class="toggle-search"></label>
+					<div class="search-wrap">
+						<input type="search" name="search-field" id="search-field" placeholder="I search for...">
+						<label for="submit-search" class="btn-search"></label>
+
+						<div id="popup_ajax-search" class="popup_ajax-search">
+	<div class="table">
+		<a href="product-page.html" class="ajax-search-item">
+			<div class="item-photo">
+				<img src="img/goods/aidigo.jpg" alt="Vanilla sugar Aydigo" title="Vanilla sugar Aydigo">
+			</div>
+			<div class="item-description">
+				"Aydigo" Vanilla sugar
+			</div>
+			<div class="item-price">
+				<span class="price-old">$12 345</span>
+				<span class="price">$1 337,80</span>
+			</div>
+		</a>
+		<a href="product-page.html" class="ajax-search-item">
+			<div class="item-photo">
+				<img src="img/goods/kar.jpg" alt="Colored gel pencils" title="Colored gel pencils">
+			</div>
+			<div class="item-description">
+				Colored gel pencils
+			</div>
+			<div class="item-price">
+				<span class="price-old">$12 345</span>
+				<span class="price">$22 129</span>
+			</div>
+		</a>
+		<a href="product-page.html" class="ajax-search-item">
+			<div class="item-photo">
+				<img src="img/goods/pepper_mix.jpg" alt="Meal peppers mix" title="Meal peppers mix">
+			</div>
+			<div class="item-description">
+				"Meal" peppers mix
+			</div>
+			<div class="item-price">
+				<span class="price-old">$12 345</span>
+				<span class="price">$1 282,50</span>
+			</div>
+		</a>
+		<a href="product-page.html" class="ajax-search-item">
+			<div class="item-photo">
+				<img src="img/goods/aidigo.jpg" alt="Vanilla sugar Aydigo" title="Vanilla sugar Aydigo">
+			</div>
+			<div class="item-description">
+				Leaf gelatine "Confectioner"
+			</div>
+			<div class="item-price">
+				<span class="price-old">$12 345</span>
+				<span class="price">$1 337,80</span>
+			</div>
+		</a>
+		<a href="product-page.html" class="ajax-search-item">
+			<div class="item-photo">
+				<img src="img/goods/kar.jpg" alt="Colored gel pencils" title="Colored gel pencils">
+			</div>
+			<div class="item-description">
+				Crystal Vanilla "Aydigo"
+			</div>
+			<div class="item-price">
+				<span class="price-old">$12 345</span>
+				<span class="price">$22 129</span>
+			</div>
+		</a>
+		<a href="product-page.html" class="ajax-search-item">
+			<div class="item-photo">
+				<img src="img/goods/pepper_mix.jpg" alt="Meal peppers mix" title="Meal peppers mix">
+			</div>
+			<div class="item-description">
+				Crystal Vanilla "Aydigo"
+			</div>
+			<div class="item-price">
+				<span class="price-old">$12 345</span>
+				<span class="price">$1 282,50</span>
+			</div>
+		</a>
+	</div>
+	
+	<a href="product-page.html" class="ajax-search-item all-results">
+		All results
+	</a>
+</div>					</div>
+					<input type="submit" value="" name="submit-search" id="submit-search">
+				</form>
+			</div>
+			<div class="delivery col-sm-6 col-xs-12">
+				<span class="text">Orders Reception:</span>
+				<span class="phone">
+					<a href="tel:+1-234-567-89-01">+1 (234) <span class="phone-short">567-89-01</span></a>
+				</span><br>
+				<span class="email">
+					<a href="mailto:onlinestore@mail.ru">foodstore@online.com</a>
+				</span>
+			</div><!-- /delivery -->
+		</div><!-- /row -->
+	</div><!-- /col-sm-8 -->
+	<!-- switching between styles via toggling class "not-authorized" -->
+	<div class="account-controls col-sm-4 col-xs-6">
+		<div class="not-authorized">
+			<div class="logged-in">
+				<button id="btn-authorized">
+					<span class="btn-content">
+						<span class="text">Personal Area:</span>
+						<span class="authorized-user">John Doe</span>
+					</span>
+				</button>
+				<button id="btn-logout"></button>
+			</div>
+			<button id="btn-login" data-toggle="modal" data-target="#modal-login"><span class="btn-content"><span class="btn-text">Sign in</span></span></button>
+		</div>
+		<div class="not-authorized">
+			<button id="btn-reg" data-toggle="modal" data-target="#modal-register"><span class="btn-content"><span class="btn-text">Sign up</span></span></button>
+		</div>
+		
+		<div class="basket-container">
+			<button id="btn-basket" class="main-btn">
+				<span class="btn-content">
+				<span class="btn-text">Cart:</span>
+				<span class="basket-data">
+					<span class="goods-number">0</span> items <span class="hidden-xs">-</span> <span class="price price-total">$0.00</span>
+				</span>
+				</span>
+			</button>
+			<div class="items-popup basket-open-popup">
+	<div class="basket-top">
+		<span class="your-order">Your order:</span>
+	</div>
+	<div class="order-details">
+	<table class="basket">
+	<tr class="catalog-item">
+		<td class="item-image"><div class="img-container"><img src="img/goods/vanil-sugar.png" alt="Vanilla sugar Aydigo"></div></td>
+		<td class="item-name"><a href="product-page.html">"Aydigo" vanilla sugar</a></td>
+		<td class="item-price">
+			<span class="price">$4</span>
+		</td>
+		<td class="item-quan">
+			<div class="quan-fixed">
+				<span class="item-quantity">1</span>
+			</div>
+			<div class="quantity quan-controlled">
+				<span class="quantity-minus">&ndash;</span>
+				<input type="text" name="quantity" value="2">
+				<span class="quantity-plus">+</span>
+			</div>
+			<div class="selector measurement-unit">
+				<div class="select">
+					<input type="text" class="selector-input" disabled>
+					<ul class="selector-list">
+						<li class="active">pkg.</li>
+						<li>g</li>
+						<li>kg</li>
+						<li>pcs.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="out-of-stock-wrapper">
+				<span class="text">Not available</span>
+				<button class="btn-out-of-stock">Report on availability</button>
+			</div>
+		</td>
+		<td class="item-lay-aside"><span class="text">Takeout</span></td>
+		<td class="item-delete"><span class="text">Remove</span></td>
+	</tr>
+	<tr class="catalog-item">
+		<td class="item-image"><div class="img-container"><img src="img/goods/sticks.png" alt="Cinnamon sticks"></div></td>
+		<td class="item-name"><a href="product-page.html">Cinnamon sticks</a></td>
+		<td class="item-price">
+			<span class="price">$6</span>
+		</td>
+		<td class="item-quan">
+			<div class="quan-fixed">
+				<span class="item-quantity">1</span>
+			</div>
+			<div class="quantity quan-controlled">
+				<span class="quantity-minus">&ndash;</span>
+				<input type="text" name="quantity" value="2">
+				<span class="quantity-plus">+</span>
+			</div>
+			<div class="selector measurement-unit">
+				<div class="select">
+					<input type="text" class="selector-input" disabled>
+					<ul class="selector-list">
+						<li class="active">pkg.</li>
+						<li>g</li>
+						<li>kg</li>
+						<li>pcs.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="out-of-stock-wrapper">
+				<span class="text">Not available</span>
+				<button class="btn-out-of-stock">Report on availability</button>
+			</div>
+		</td>
+		<td class="item-lay-aside"><span class="text">Takeout</span></td>
+		<td class="item-delete"><span class="text">Remove</span></td>
+	</tr>
+	<tr class="catalog-item out-of-stock">
+		<td class="item-image"><div class="img-container"><img src="img/goods/mindal.png" alt="Almond petals"></div></td>
+		<td class="item-name"><a href="product-page.html">Almond petals</a></td>
+		<td class="item-price">
+			<span class="price">$14</span>
+		</td>
+		<td class="item-quan">
+			<div class="quan-fixed">
+				<span class="item-quantity">1</span>
+			</div>
+			<div class="quantity quan-controlled">
+				<span class="quantity-minus">&ndash;</span>
+				<input type="text" name="quantity" value="2">
+				<span class="quantity-plus">+</span>
+			</div>
+			<div class="selector measurement-unit">
+				<div class="select">
+					<input type="text" class="selector-input" disabled>
+					<ul class="selector-list">
+						<li class="active">pkg.</li>
+						<li>g</li>
+						<li>kg</li>
+						<li>pcs.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="out-of-stock-wrapper">
+				<span class="text">Not available</span>
+				<button class="btn-out-of-stock">Report on availability</button>
+			</div>
+		</td>
+		<td class="item-lay-aside"><span class="text">Takeout</span></td>
+		<td class="item-delete"><span class="text">Remove</span></td>
+	</tr>
+	<tr class="catalog-item">
+		<td class="item-image"><div class="img-container"><img src="img/goods/vanil-sugar.png" alt="Vanilla sugar Aydigo"></div></td>
+		<td class="item-name"><a href="product-page.html">Vanilla sugar "Aydigo"</a></td>
+		<td class="item-price">
+			<span class="price">$4</span>
+		</td>
+		<td class="item-quan">
+			<div class="quan-fixed">
+				<span class="item-quantity">1</span>
+			</div>
+			<div class="quantity quan-controlled">
+				<span class="quantity-minus">&ndash;</span>
+				<input type="text" name="quantity" value="2">
+				<span class="quantity-plus">+</span>
+			</div>
+			<div class="selector measurement-unit">
+				<div class="select">
+					<input type="text" class="selector-input" disabled>
+					<ul class="selector-list">
+						<li class="active">pkg.</li>
+						<li>g</li>
+						<li>kg</li>
+						<li>pcs.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="out-of-stock-wrapper">
+				<span class="text">Not available</span>
+				<button class="btn-out-of-stock">Report on availability</button>
+			</div>
+		</td>
+		<td class="item-lay-aside"><span class="text">Takeout</span></td>
+		<td class="item-delete"><span class="text">Remove</span></td>
+	</tr>
+	</table>
+</div>	<div class="basket-bottom">
+		<span class="total-price">Total: <span class="price">$27</span></span> <a href="order-making-1.html" class="make-order main-btn">Checkout</a>
+	</div>
+</div>		</div><!-- /basket-container -->
+		<a href="favorites.html" id="btn-favorites">
+			<span class="btn-content">
+				<span class="btn-text">Favorites</span>
+				(<span class="favorites-quantity">4</span>)
+			</span>
+		</a>
+		<a href="compare.html" id="btn-comparison">
+			<span class="btn-content">
+				<span class="btn-text">Comparison List</span>
+				(<span class="favorites-quantity">2</span>)
+			</span>
+		</a>
+	</div>
+</header><!-- /site-header -->
+</div><!-- /row -->
+<button class="main-menu-toggle"><span class="text">Items Catalog</span></button>
+<nav class="main row">
+	<ul class="main-menu clearfix">
+		<li class="expandable xs-only">
+			<a href="catalog.html">Items</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Children's goods</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Beauty & Personal Care</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Domestic chemistry</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Home and Garden</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Domestic chemistry</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+		<li class="expandable xs-only">
+			<a href="catalog.html">Domestic chemistry</a>
+			<div class="mobile-link">
+				<a href="catalog.html" class="flaticon-thin4"></a>
+			</div>
+			<div class="submenu-wrapper expand-content clearfix">
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
+						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
+						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
+						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+					</ul>
+				</div>
+				<div class="main-menu-sub expandable xs-only">
+					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
+					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
+						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
+						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
+						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
+						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
+						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
+						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+					</ul>
+				</div><!-- /main-menu-sub -->
+			</div><!-- /submenu-wrapper -->
+		</li>
+	</ul><!-- /main-menu -->
+</nav><!-- /main -->
+
+<!-- popups and modals-->
+
+<div id="modal-login" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<form method="post" action="#" class="form-login">
+	<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#modal-login"></a>
+	<h2>Authorization</h2>
+	<div class="form-logo"></div>
+	<div class="textinput-wrapper">
+		<label for="login-username">Username</label>
+		<input type="text" name="login-username" id="login-username" placeholder="Username" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="login-password">Password</label>
+		<input type="password" name="login-password" id="login-password" placeholder="Password" class="textinput-styled" required>
+	</div>
+	<div class="remember-container">
+		<input type="checkbox" name="remember" id="remember" class="checkbox-styled">
+		<label for="remember">Remember me</label>
+		<br><a href="#" class="forgot-pass">Forgot password?</a>
+	</div>
+	<div class="form-footer">
+		<input type="submit" value="Continue" name="login-submit" id="login-submit" class="main-btn">
+		<ul class="social-list">
+			<li><a href="#" class="social tw"><span class="icon-container sprite"></span></a></li>
+			<li><a href="#" class="social vk"><span class="icon-container sprite"></span></a></li>
+			<li><a href="#" class="social fb"><span class="icon-container sprite"></span></a></li>
+		</ul>
+	</div>
+</form>	</div>
+</div><div id="modal-register" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<form method="post" action="#" class="form-registration">
+	<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#modal-register"></a>
+	<h2>Sign up</h2>
+	<div class="form-logo"></div>
+	<div class="radio-group">
+		<div>
+			<input type="radio" name="auto-generation" id="auto-generation" value="true" class="radio-styled">
+			<label for="auto-generation">Generate login and password</label>
+		</div>
+		<div>
+			<input type="radio" name="auto-generation" id="auto-generation-false" value="false" class="radio-styled" checked>
+			<label for="auto-generation-false">Set login and password</label>
+		</div>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="reg-username">Login</label>
+		<input type="text" name="reg-username" id="reg-username" placeholder="Username" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="reg-password">Password</label>
+		<input type="password" name="reg-password" id="reg-password" placeholder="Password" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="reg-password-repeat">Repeat password</label>
+		<input type="password" name="reg-password-repeat" id="reg-password-repeat" placeholder="Repeat password" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="email">E-mail</label>
+		<input type="email" name="email" id="email" placeholder="E-mail" class="textinput-styled" required>
+	</div>
+	<div class="textinput-wrapper">
+		<label for="first-name">Name</label>
+		<input type="text" name="first-name" id="first-name" placeholder="Name" class="textinput-styled">
+	</div>
+	<div class="textinput-wrapper">
+		<label for="last-name">Surname</label>
+		<input type="text" name="last-name" id="last-name" placeholder="Surname" class="textinput-styled">
+	</div>
+	<div class="anti-robot clearfix">
+		<div class="captcha"><img src="img/captcha.jpg" alt="Captcha"></div>
+		<div class="textinput-wrapper">
+			<input type="text" name="captcha" id="captcha" placeholder="Captcha" class="textinput-styled" required>
+			<label for="captcha">Captcha</label>
+		</div>
+	</div>
+	<div class="required-info"><span>*</span>Fields marked with asterisk are required</div>			
+	<div class="form-footer">
+		<div class="agreement-checkbox-wrapper">
+			<input type="checkbox" name="accept-agreement" id="accept-agreement" class="checkbox-styled">
+			<label for="accept-agreement">I agree with <a href="#">Store Terms and Conditions</a></label>
+		</div>
+		<input type="submit" value="Continue" name="reg-submit" id="reg-submit" class="main-btn">
+	</div>
+</form>
+	</div>
+</div>
+
+
+<button class="color-switch-toggle"><span class="glyphicon glyphicon-cog"></span></button>
+
+
+
+<div class="modal" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="success-modal" aria-hidden="true">
+		<div class="form-success">
+			<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#success-modal"></a>
+			<span class="glyphicon glyphicon-ok"></span>
+			Sign up successful
+		</div>
+</div>
+<div class="modal" id="fail-modal" tabindex="-1" role="dialog" aria-labelledby="fail-modal" aria-hidden="true">
+		<div class="form-fail">
+			<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#fail-modal"></a>
+			<span class="glyphicon glyphicon-ban-circle"></span>
+			Attention! There is a mistake!
+		</div>
+</div>
+
+<div class="modal fade" id="color-switcher" tabindex="-1" role="dialog" aria-labelledby="color-switcher" aria-hidden="true">
+	<div class="modal-dialog">
+		<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#color-switcher"></a>
+		<h3>Settings Panel</h3>
+		<p>Choose Color Scheme:</p>
+		<div class="theme-demo aurora" data-theme='aurora'>Aurora</div>
+		<div class="theme-demo bluesky" data-theme='bluesky'>Bluesky</div>
+		<div class="theme-demo fresh" data-theme='fresh'>Fresh</div>
+		<div class="theme-demo honey" data-theme='honey'>Honey</div>
+		<div class="theme-demo violet" data-theme='violet'>Violet</div>
+		<hr>
+		<button class="btn-close-modal main-btn" data-toggle="modal" data-target="#color-switcher">OK</button>
+	</div>
+</div>
+<div class="modal fade" id="city-switcher" tabindex="-1" role="dialog" aria-labelledby="city-switcher" aria-hidden="true">
+	<div class="modal-dialog">
+		<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#city-switcher"></a>
+		<h3>Please select a city:</h3>
+		<p>Now selected: <span class="current-city">Krasnoyarsk</span></p>
+		<ul>
+			<li><span>Los Angeles</span>
+			</li><li><span>New York</span>
+			</li><li class="active"><span>Krasnoyarsk</span>
+			</li><li><span>Chelsea</span>
+			</li><li><span>Ostin</span>
+			</li><li><span>Memphis</span>
+			</li><li><span>Washington, DC</span>
+			</li><li><span>London</span>
+			</li><li><span>Helsinki</span>
+			</li><li><span>Toronto</span>
+			</li><li><span>San Francisco</span>
+			</li><li><span>New Dely</span>
+			</li><li><span>Istambul</span>
+			</li><li><span>Kiev</span>
+			</li><li><span>Minsk</span>
+			</li><li><span>Novosibirsk</span>
+			</li><li><span>Moscow</span>
+			</li><li><span>Berlin</span>
+			</li><li><span>Praga</span>
+			</li><li><span>Athens</span></li>
+			<!-- Attention! There is must not be spacing between previous block closing tag
+			and next block opening tag!
+			 -->
+		</ul>
+		<hr>
+		<button class="btn-close-modal main-btn" data-toggle="modal" data-target="#city-switcher">OK</button>
+	</div>
+</div>			<div class="bcrumbs-container row">
+	<div class="col-xs-12">
+		<div class="bcrumbs">
+			<a href="main.html" class="home"></a>&rarr;
+			<a href="#">Items</a>&rarr;
+			<a href="#">Sauces and spices</a>&rarr;
+			<a href="#">For baking and desserts</a>&rarr;
+			<a href="#" class="active">Vanilla sugar "Aydigo"</a>
+		</div>
+	</div>
+</div>
+<div class="product hproduct row">
+	<h1 class="fn">Vanilla sugar "<span class="brand">Aydigo</span>"</h1>
+	<span class="category" style="display: none">Items</span>
+	<aside class="col-sm-4 col-xs-12">
+		<div class="medium-image">
+			<ul class="slides clearfix">
+				<li><img src="img/goods/medium-images/big-slider-1.jpg" alt="Sweets" data-big-image="img/goods/big-images/big-slider-1.jpg"></li>
+				<li><img src="img/goods/medium-images/big-slider-3.jpg" alt="Pancakes" data-big-image="img/goods/big-images/big-slider-3.jpg"></li>
+				<li><img src="img/goods/medium-images/big-slider-4.jpg" alt="Greenery" data-big-image="img/goods/big-images/big-slider-4.jpg"></li>
+				<li><img src="img/goods/medium-images/big-slider-5.jpg" alt="Sweets" data-big-image="img/goods/big-images/big-slider-5.jpg"></li>
+				<li><img src="img/goods/medium-images/big-slider-6.jpg" alt="Pancakes" data-big-image="img/goods/big-images/big-slider-6.jpg"></li>
+				<li><img src="img/goods/medium-images/big-slider-7.jpg" alt="Greenery" data-big-image="img/goods/big-images/big-slider-7.jpg"></li>
+			</ul>
+		</div>
+		<div class="zoom-controls">Zoom</div>
+		<div class="thumbnails flexslider">
+			<ul class="thumbnails-list slides clearfix">
+				<li><img src="img/goods/thumbnails/big-slider-1.jpg" alt="Sweets"></li>
+				<li><img src="img/goods/thumbnails/big-slider-3.jpg" alt="Pancakes"></li>
+				<li><img src="img/goods/thumbnails/big-slider-4.jpg" alt="Greenery"></li>
+				<li><img src="img/goods/thumbnails/big-slider-5.jpg" alt="Sweets"></li>
+				<li><img src="img/goods/thumbnails/big-slider-6.jpg" alt="Pancakes"></li>
+				<li><img src="img/goods/thumbnails/big-slider-7.jpg" alt="Greenery"></li>
+			</ul>
+		</div>
+		<div class="socials">
+			Like it? Tell your friends!
+			<ul class="socials">
+				<li><a href="#" class="social vk sprite"></a></li>
+				<li><a href="#" class="social fb sprite"></a></li>
+				<li><a href="#" class="social tw sprite"></a></li>
+				<li><a href="#" class="social gplus sprite"></a></li>
+			</ul>
+		</div>
+	</aside>
+	<div class="product-data-section col-md-8 col-sm-8 col-xs-12">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<dl class="product-data clearfix">
+					<dt>Article</dt><dd class="identifier">09876534</dd>
+					<dt>Manufacturer</dt><dd>Colossus (Argentina)</dd>
+					<dt>Energy value, 100g</dt><dd>175 kkal</dd>
+					<dt>Weight</dt><dd>5g</dd>
+					<dt>Proteins/Fats/Carbohydrates</dt><dd>4,5g / 7g / 10g</dd>
+				</dl>
+				<ul class="stickers-container">
+					<li><div class="sticker new">New</div>New</li>
+					<li><div class="sticker discount">35%</div>Discount 35%</li>
+					<li><div class="sticker discount">35%</div>Discount 35%</li>
+					<li><div class="sticker discount">35%</div>Discount 35%</li>
+				</ul>
+				<span class="in-stock">Available</span>
+				<div class="item-actions-wrapper clearfix">
+					<div class="item-actions pull-left">
+						<div class="rating">
+							<span class="flaticon-little27 star"></span>
+							<span class="flaticon-little27 star"></span>
+							<span class="flaticon-little27 star"></span>
+							<span class="flaticon-little27 star"></span>
+							<span class="flaticon-little27 star"></span>
+						</div>
+						<button class="compare"><span class="text">Compare</span></button>
+					</div>
+					<div class="item-actions pull-right">
+						<button class="like"><span class="text">Excellent Item!</span></button>
+						<button class="favorite"><span class="text">To favorites</span></button>
+					</div>
+				</div><!-- /item-actions-wrapper -->
+			</div><!-- /col-sm-6 -->
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="big-buy-btn">
+					Price:<br>
+					<del class="price">$4</del>
+					<span class="price">$3.5</span>
+					<div class="quantity-container">
+						<div class="quantity">
+							<span class="quantity-minus">&ndash;</span>
+							<input type="text" name="quantity" value="2">
+							<span class="quantity-plus">+</span>
+						</div>
+						<div class="selector measurement-unit">
+							<div class="select">
+								<input type="text" class="selector-input" disabled>
+								<ul class="selector-list">
+									<li class="active">pkg.</li>
+									<li>g</li>
+									<li>kg</li>
+									<li>pcs.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<button class="to-basket big">To cart</button>
+				</div><!-- /big-buy-btn -->
+			</div>
+		</div><!-- /row -->
+		
+		<div class="product-info-section row">
+			<div class="col-xs-12">
+				<input type="radio" name="product-info-switch" id="product-info-description" class="product-info-switch" data-toggle="description" checked>
+				<label for="product-info-description" class="product-info-tab">Details</label>
+				<input type="radio" name="product-info-switch" id="product-info-reviews" class="product-info-switch" data-toggle="reviews">
+				<label for="product-info-reviews" class="product-info-tab">Comments</label>
+				<div class="product-info description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam laudantium incidunt labore sapiente officiis voluptatum officia eos inventore consequatur delectus asperiores quos saepe commodi voluptatibus quibusdam, soluta nisi quo, ab, laboriosam. Delectus ut aperiam sit, deserunt nihil. Maiores non explicabo autem vero dicta eius quidem sed delectus consequuntur quod dolor tenetur officia quis inventore, accusantium?</div>
+				<div class="product-info reviews">
+					<!-- toggle (remove/add) class "not-authorized"
+					for styles switching -->
+					<div class="post-comment clearfix">
+						<div class="avatar">
+							<img src="img/avatars/avatar-demo2.jpg" alt="Avatar">
+						</div>
+						<div class="content">
+							<span class="date">2014/11/15</span>
+							<h4>John Doe</h4>
+							<form action="#" method="post" id="form-comments">
+								<div>
+									<input type="email" id="reviews-email" name="comments-email" placeholder="Your e-mail" class="textinput-styled">
+								</div>
+								
+								<textarea name="textarea-comment" id="textarea-comment" cols="30" rows="5" placeholder="Input message"></textarea>
+								<input type="submit" name="submit-comment" value="Send" class="main-btn">
+							</form>
+						</div><!-- /.content -->
+					</div><!-- /.post-comment -->
+					<div class="comments-item clearfix">
+						<div class="avatar">
+							<img src="img/avatars/avatar-demo1.jpg" alt="Avatar">
+						</div>
+						<div class="content">
+							<span class="date">2014/11/15</span>
+							<h4>Camilla Preston</h4>
+							<p>Good spice! I buy it in this store, since it was only place where sell real vanilla. Never sell fake. In the evening I cook bread and drink tea.</p>
+						</div>
+					</div>
+					<div class="comments-item clearfix">
+						<div class="avatar">
+							<img src="img/avatars/avatar-demo2.jpg" alt="Avatar">
+						</div>
+						<div class="content">
+							<span class="date">2014/11/15</span>
+							<h4>Ernest Hemingway</h4>
+							<p>How can I use this spice?</p>
+						</div>
+					</div>
+					<div class="comments-item clearfix">
+						<div class="avatar">
+							<img src="img/avatars/avatar-demo3.jpg" alt="Avatar">
+						</div>
+						<div class="content">
+							<span class="date">2014/11/15</span>
+							<h4>F. Scott Fitzgerald</h4>
+							<p>Hey, guys! It's so tasty to make Napoleon cake with it. Real jam!</p>
+						</div><!-- /.content -->
+					</div><!-- /.comments-item -->
+				</div><!-- /product-info reviews -->
+
+				<div class="recommended-items row">
+					<h2>We also recommend to purchase:</h2>
+					<div class="recommended-item col-xs-3">
+						<div class="img-container"><img src="img/goods/vanil.jpg" alt="Vanilla beans"></div>
+						<p><a href="product-page.html">Vanilla beans</a></p>
+					</div>
+					<div class="recommended-item col-xs-3">
+						<div class="img-container"><img src="img/goods/sticks.jpg" alt="Cinnamon sticks"></div>
+						<p><a href="product-page.html">Cinnamon sticks</a></p>
+					</div>
+					<div class="recommended-item col-xs-3">
+						<div class="img-container"><img src="img/goods/mindal.jpg" alt="Almond petals"></div>
+						<p><a href="product-page.html">Almond petals</a></p>
+					</div>
+					<div class="recommended-items-price col-xs-3">
+						<div class="special-price">Special price<br>for you</div>
+						<div class="price">$26</div>
+						<button class="to-basket">To cart</button>
+					</div>
+				</div><!-- /recommended-items -->
+			</div><!-- /col-xs-12 -->
+		</div><!-- /product-info-section -->
+	</div><!-- /product-data-section -->
+</div>
+<section class="also-buy row">
+	<h2>Usually they buy with this product:</h2>
+	<div class="col-xs-12 carousel slide" id="also-buy-items" data-ride="carousel">
+		<div class="carousel-inner catalog-blocks row4">
+			<div class="item-container">
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker new">New</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/new_castle.jpg" alt="Worchester Sauce New Castle" title="Worchester Sauce New Castle">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Worchester sauce "New Castle"</a></h3>
+			<p class="description-short">Indispensable sauce in various meat dishes</p cooking>
+			<p class="description-full">Indispensable sauce in various meat dishes cooking, (the title of the English county of Worcestershire) — sweet and sour, slightly spicy fermented English sauce, made on the basis of vinegar, sugar and fish.</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker discount">-35%</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/maryland.jpg" alt="Chocolate cookies Maryland" title="Chocolate cookies Maryland">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Chocolate cookies "Maryland"</a></h3>
+			<p class="description-short">Very tasty chocolate cookies with jellies</p>
+			<p class="description-full">Very tasty, sweet biscuit popular in Australia and New Zealand, made from rolled oats, flour, coconut, sugar, butter, golden syrup, soda and boiled water. Chocolate cookies with orange marmalade...</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker special-offer">Promo</div>
+				<div class="sticker discount">-35%</div>
+			</div>
+			<img src="img/goods/semga.jpg" alt="Norwegian salmon (fillets)" title="Norwegian salmon (fillets)">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Norwegian salmon (fillets)</a></h3>
+			<p class="description-short">Delicate, fresh, delicious fillet fish delicacy</p>
+			<p class="description-full">Very tasty, sweet biscuit popular in Australia and New Zealand, made from rolled oats, flour, coconut, sugar, butter, golden syrup, soda and boiled water. Chocolate cookies with orange marmalade...</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker new">New</div>
+				<div class="sticker special-offer">Promo</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/country.jpg" alt="Duck pate 'Country'" title="Duck pate 'Country'">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Duck pate "Country"</a></h3>
+			<p class="description-short">Meat delicacies with sophisticted taste</p>
+			<p class="description-full">Indispensable sauce in various meat dishes cooking, (the title of the English county of Worcestershire) — sweet and sour, slightly spicy fermented English sauce, made on the basis of vinegar, sugar and fish.</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+</div><!-- /catalog-item -->
+</div>			<div class="item-container">
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker new">New</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/new_castle.jpg" alt="Worchester Sauce New Castle" title="Worchester Sauce New Castle">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Worchester sauce "New Castle"</a></h3>
+			<p class="description-short">Indispensable sauce in various meat dishes</p cooking>
+			<p class="description-full">Indispensable sauce in various meat dishes cooking, (the title of the English county of Worcestershire) — sweet and sour, slightly spicy fermented English sauce, made on the basis of vinegar, sugar and fish.</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker discount">-35%</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/maryland.jpg" alt="Chocolate cookies Maryland" title="Chocolate cookies Maryland">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Chocolate cookies "Maryland"</a></h3>
+			<p class="description-short">Very tasty chocolate cookies with jellies</p>
+			<p class="description-full">Very tasty, sweet biscuit popular in Australia and New Zealand, made from rolled oats, flour, coconut, sugar, butter, golden syrup, soda and boiled water. Chocolate cookies with orange marmalade...</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker special-offer">Promo</div>
+				<div class="sticker discount">-35%</div>
+			</div>
+			<img src="img/goods/semga.jpg" alt="Norwegian salmon (fillets)" title="Norwegian salmon (fillets)">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Norwegian salmon (fillets)</a></h3>
+			<p class="description-short">Delicate, fresh, delicious fillet fish delicacy</p>
+			<p class="description-full">Very tasty, sweet biscuit popular in Australia and New Zealand, made from rolled oats, flour, coconut, sugar, butter, golden syrup, soda and boiled water. Chocolate cookies with orange marmalade...</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker new">New</div>
+				<div class="sticker special-offer">Promo</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/country.jpg" alt="Duck pate 'Country'" title="Duck pate 'Country'">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Duck pate "Country"</a></h3>
+			<p class="description-short">Meat delicacies with sophisticted taste</p>
+			<p class="description-full">Indispensable sauce in various meat dishes cooking, (the title of the English county of Worcestershire) — sweet and sour, slightly spicy fermented English sauce, made on the basis of vinegar, sugar and fish.</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+</div><!-- /catalog-item -->
+</div>			<div class="item-container">
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker new">New</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/new_castle.jpg" alt="Worchester Sauce New Castle" title="Worchester Sauce New Castle">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Worchester sauce "New Castle"</a></h3>
+			<p class="description-short">Indispensable sauce in various meat dishes</p cooking>
+			<p class="description-full">Indispensable sauce in various meat dishes cooking, (the title of the English county of Worcestershire) — sweet and sour, slightly spicy fermented English sauce, made on the basis of vinegar, sugar and fish.</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker discount">-35%</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/maryland.jpg" alt="Chocolate cookies Maryland" title="Chocolate cookies Maryland">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Chocolate cookies "Maryland"</a></h3>
+			<p class="description-short">Very tasty chocolate cookies with jellies</p>
+			<p class="description-full">Very tasty, sweet biscuit popular in Australia and New Zealand, made from rolled oats, flour, coconut, sugar, butter, golden syrup, soda and boiled water. Chocolate cookies with orange marmalade...</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker special-offer">Promo</div>
+				<div class="sticker discount">-35%</div>
+			</div>
+			<img src="img/goods/semga.jpg" alt="Norwegian salmon (fillets)" title="Norwegian salmon (fillets)">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Norwegian salmon (fillets)</a></h3>
+			<p class="description-short">Delicate, fresh, delicious fillet fish delicacy</p>
+			<p class="description-full">Very tasty, sweet biscuit popular in Australia and New Zealand, made from rolled oats, flour, coconut, sugar, butter, golden syrup, soda and boiled water. Chocolate cookies with orange marmalade...</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+	</div><!-- /catalog-item -->
+</div><div class="item-container">
+<!-- ^ </div><div should be together. It's important! -->
+	<div class="catalog-item clearfix">
+		<div class="buy-actions">
+			<div class="price-container">
+				<span class="price-old">$450</span>
+				<span class="price">$2000</span>
+			</div>
+			<button class="to-basket">To cart</button>
+			<div class="quantity-container full-view">
+				<div class="quantity">
+					<span class="quantity-minus">&ndash;</span>
+					<input type="text" name="quantity" value="2">
+					<span class="quantity-plus">+</span>
+				</div>
+				<div class="selector measurement-unit">
+					<div class="select">
+						<input type="text" class="selector-input" disabled>
+						<ul class="selector-list">
+							<li class="active">pkg.</li>
+							<li>g</li>
+							<li>kg</li>
+							<li>pcs.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img-container">
+			<div class="stickers-container">
+				<div class="sticker new">New</div>
+				<div class="sticker special-offer">Promo</div>
+				<div class="sticker hit">Hit</div>
+			</div>
+			<img src="img/goods/country.jpg" alt="Duck pate 'Country'" title="Duck pate 'Country'">
+		</div>
+		<div class="description-container">
+			<h3><a href="product-page.html">Duck pate "Country"</a></h3>
+			<p class="description-short">Meat delicacies with sophisticted taste</p>
+			<p class="description-full">Indispensable sauce in various meat dishes cooking, (the title of the English county of Worcestershire) — sweet and sour, slightly spicy fermented English sauce, made on the basis of vinegar, sugar and fish.</p>
+		</div><!-- /description-container -->
+		<div class="item-actions clearfix full-view">
+			<div class="rating">
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+				<span class="flaticon-little27 star"></span>
+			</div>
+			<button class="favorite"><span class="text">To favorites</span></button>
+			<button class="compare"><span class="text">Compare</span></button>
+			<button class="review"><span class="text">3 reviews</span></button>
+		</div>
+</div><!-- /catalog-item -->
+</div>		</div>
+	</div>
+</section><!-- /also-buy -->
+
+<div class="modal fade" id="product-big-image-modal" tabindex="-1" role="dialog" aria-labelledby="product-big-image-modal" aria-hidden="true">
+	<div class="modal-content">
+		<button class="btn-modal-control close" data-toggle="modal" data-target="#product-big-image-modal"></button>
+		<button class="btn-modal-control prev"></button>
+		<button class="btn-modal-control next"></button>
+		<img src="img/goods/thumbnails/big-slider-3.jpg" alt="Pancakes">
+	</div><!-- /modal-content -->
+</div>			<div class="company row">
+	<section class="about col-sm-6 col-xs-12">
+		<h2>About us</h2>
+		<p><span class="company-name">Online Store</span> &mdash; it is home food delivery</p>
+		<p>You can buy products and order shipping 24 hours a day/7 days a week. And there is benefit of order day delivery!</p>
+		<p class="additional">Food buying, celebration organizing, water and other drinks delivery ordering is quite simple now!</p>
+		<p class="additional">Our products range is huge and growing every day, so we can satisfy even the most demanding customers.</p>
+	</section><!-- /about -->
+	<section class="benefits col-sm-6 col-xs-12">
+		<h2>Our benefits</h2>
+		<div class="row">
+			<div class="col-sm-4 col-xs-4">
+				<div class="benefit wide-choice">
+					<div class="icon-container sprite"></div>
+					Huge <span class="hidden-xs">all kinds</span> items selection
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-4">
+				<div class="benefit best-selection">
+					<div class="icon-container sprite"></div>
+					We select only <span class="hidden-xs">the best of them</span><span class="visible-xs-inline">the best</span>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-4">
+				<div class="benefit favorite-clients">
+					<div class="icon-container sprite"></div>
+					Favorite products <br class="visible-xs-inline">for favorite customers
+				</div>
+			</div>
+		</div>
+		<div class="row subscribe">
+			<h2>Newsletter Subscription</h2>
+			<form action="#" class="form-subscribe">
+				<div class="col-sm-8 col-xs-7">
+					<label>
+						<input type="email" name="email" placeholder="Your e-mail..." class="subscribe-email">
+					</label>
+				</div>
+				<div class="col-sm-4 col-xs-5">
+					<input type="submit" name="subscribe" value="Subscribe" class="main-btn">
+				</div>
+			</form>
+		</div>
+	</section><!-- /benefits -->
+</div><!-- /company -->
+<div class="copyright row">
+	<div class="copyright-text col-sm-6 col-xs-12">
+		<p>&copy; Online Store: Products and domestic items e-shop, 2014</p>
+		<p class="romza-logo">
+			Made in
+			<a href="http://romza.ru/" title="web-replicant solutions studio "Romza"><img src="img/romza-logo.png" alt="web-replicant solutions studio "Romza" class="romza-logo"></a>
+		</p>
+	</div>
+	<div class="counters col-sm-6 hidden-xs">
+		<!-- <div class="yamarket"></div>
+		<div class="liveinternet"></div>
+		<div class="mailru"></div> -->
+	</div>
+</div><!-- /copyright -->		</div>
+	</div>
+	<script src="js/um_images.js"></script>
+	<script src="js/product-page.js"></script>
+</body>
+</html>
