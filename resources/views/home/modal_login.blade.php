@@ -1,15 +1,15 @@
 <div id="modal-login" class="modal fade" tabindex="-1" role="dialog">
-	<div class="modal-dialog">
-		<form method="post" action="#" class="form-login">
+	<div class="modal-dialog login-box">
+		<form method="post" action="/login" class="form-login">
 	<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#modal-login"></a>
 	<h2>Authorization</h2>
 	<div class="form-logo"></div>
 	<div class="textinput-wrapper">
-		<label for="login-username">Username</label>
-		<input type="text" name="login-username" id="login-username" placeholder="Username" class="textinput-styled" required>
+		<label for="login-username" class="adjust">Email Address</label>
+		<input type="text" name="login-username" id="login-username" placeholder="Email Address" class="textinput-styled" required>
 	</div>
 	<div class="textinput-wrapper">
-		<label for="login-password">Password</label>
+		<label for="login-password" class="adjust">Password</label>
 		<input type="password" name="login-password" id="login-password" placeholder="Password" class="textinput-styled" required>
 	</div>
 	<div class="remember-container">
