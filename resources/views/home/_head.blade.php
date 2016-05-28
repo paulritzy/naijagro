@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('css/styles.css')}}">
 	<link rel="stylesheet" href="{{asset('css/themes/theme_aurora.css')}}" class="current-theme">
-
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900" rel="stylesheet">
+	
 	<script src="{{asset('js/jquery-1.11.1.min.js')}}"></script>
 	<script src="{{asset('js/velocity.min.js')}}"></script>
 	<script src="{{asset('js/bootstrap.min.js')}}"></script>
