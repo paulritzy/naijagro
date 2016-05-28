@@ -1,3 +1,7 @@
+body{
+	
+	overflow-x: hidden;
+}
 @font-face {
     font-family: "Flaticon";
     src: url("../fonts/flaticon.eot");
@@ -2296,7 +2300,7 @@ nav.site-nav ul.socials a.social {
     content: "\e024"
 }
 .big-header {
-    min-height: 240px
+    min-height: 140px
 }
 .big-header:before {
     content: '';
@@ -2304,7 +2308,7 @@ nav.site-nav ul.socials a.social {
     left: 0;
     top: 50px;
     width: 100%;
-    height: 270px;
+    height: 170px;
     background: url('../img/backgrounds/bg.png') repeat
 }
 @media (max-width: 767px) {
@@ -5298,8 +5302,10 @@ nav.site-nav ul.socials a.social {
 }
 .flexslider {
     margin: 0;
-    padding: 0
+    padding: 0;
+     
 }
+
 .flexslider .slides>li {
     display: none;
     -webkit-backface-visibility: hidden
@@ -5335,7 +5341,7 @@ html[xmlns] .flexslider .slides {
     right: 15px
 }
 .flex-viewport {
-    max-height: 2000px;
+    max-height: 350px;
     -webkit-transition: all 1s ease;
     transition: all 1s ease
 }
@@ -5344,7 +5350,7 @@ html[xmlns] .flexslider .slides {
     transition: all 1s ease
 }
 .loading .flex-viewport {
-    max-height: 500px
+    max-height: 350px
 }
 .flexslider .carousel li {
     margin-right: 5px
@@ -7035,7 +7041,7 @@ html[xmlns] .flexslider .slides {
         bottom: 0;
         opacity: 0
     }
-    .specials {
+     {
         height: 310px
     }
     .specials h2 {

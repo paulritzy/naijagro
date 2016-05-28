@@ -2,8 +2,8 @@
 	<div class="catalog-item clearfix">
 		<div class="buy-actions">
 			<div class="price-container">
-				<span class="price-old">$450</span>
-				<span class="price">$2000</span>
+				<span class="price-old">₦450</span>
+				<span class="price">₦2000</span>
 			</div>
 			<button class="to-basket">To cart</button>
 			<div class="quantity-container full-view">
@@ -45,18 +45,15 @@
 				<span class="flaticon-little27 star"></span>
 				<span class="flaticon-little27 star"></span>
 			</div>
-			<button class="favorite"><span class="text">To favorites</span></button>
-			<button class="compare"><span class="text">Compare</span></button>
-			<button class="review"><span class="text">3 reviews</span></button>
-		</div>
+			</div>
 	</div><!-- /catalog-item -->
 </div><div class="item-container">
 <!-- ^ </div><div should be together. It's important! -->
 	<div class="catalog-item clearfix">
 		<div class="buy-actions">
 			<div class="price-container">
-				<span class="price-old">$450</span>
-				<span class="price">$2000</span>
+				<span class="price-old">₦450</span>
+				<span class="price">₦2000</span>
 			</div>
 			<button class="to-basket">To cart</button>
 			<div class="quantity-container full-view">
@@ -73,6 +70,7 @@
 							<li>g</li>
 							<li>kg</li>
 							<li>pcs.</li>
+							<li title="Basket">Bkt.</li>
 						</ul>
 					</div>
 				</div>
@@ -98,18 +96,15 @@
 				<span class="flaticon-little27 star"></span>
 				<span class="flaticon-little27 star"></span>
 			</div>
-			<button class="favorite"><span class="text">To favorites</span></button>
-			<button class="compare"><span class="text">Compare</span></button>
-			<button class="review"><span class="text">3 reviews</span></button>
-		</div>
+			</div>
 	</div><!-- /catalog-item -->
 </div><div class="item-container">
 <!-- ^ </div><div should be together. It's important! -->
 	<div class="catalog-item clearfix">
 		<div class="buy-actions">
 			<div class="price-container">
-				<span class="price-old">$450</span>
-				<span class="price">$2000</span>
+				<span class="price-old">₦450</span>
+				<span class="price">₦2000</span>
 			</div>
 			<button class="to-basket">To cart</button>
 			<div class="quantity-container full-view">
@@ -126,6 +121,7 @@
 							<li>g</li>
 							<li>kg</li>
 							<li>pcs.</li>
+							<li title="Basket">Bkt.</li>
 						</ul>
 					</div>
 				</div>
@@ -151,18 +147,15 @@
 				<span class="flaticon-little27 star"></span>
 				<span class="flaticon-little27 star"></span>
 			</div>
-			<button class="favorite"><span class="text">To favorites</span></button>
-			<button class="compare"><span class="text">Compare</span></button>
-			<button class="review"><span class="text">3 reviews</span></button>
-		</div>
+			</div>
 	</div><!-- /catalog-item -->
 </div><div class="item-container">
 <!-- ^ </div><div should be together. It's important! -->
 	<div class="catalog-item clearfix">
 		<div class="buy-actions">
 			<div class="price-container">
-				<span class="price-old">$450</span>
-				<span class="price">$2000</span>
+				<span class="price-old">₦450</span>
+				<span class="price">₦2000</span>
 			</div>
 			<button class="to-basket">To cart</button>
 			<div class="quantity-container full-view">
@@ -179,6 +172,7 @@
 							<li>g</li>
 							<li>kg</li>
 							<li>pcs.</li>
+							<li title="Basket">Bkt.</li>
 						</ul>
 					</div>
 				</div>
@@ -205,9 +199,6 @@
 				<span class="flaticon-little27 star"></span>
 				<span class="flaticon-little27 star"></span>
 			</div>
-			<button class="favorite"><span class="text">To favorites</span></button>
-			<button class="compare"><span class="text">Compare</span></button>
-			<button class="review"><span class="text">3 reviews</span></button>
-		</div>
+			</div>
 </div><!-- /catalog-item -->
 </div>

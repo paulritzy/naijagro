@@ -111,3 +111,13 @@ $('.hide-btn').on('click', function(){
 		.removeClass('active').prev('.item').addClass('active');
 	processButtons($('#main-catalog'));
 })
+
+$(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });

@@ -1,10 +1,10 @@
 <div class="company row">
 	<section class="about col-sm-6 col-xs-12">
 		<h2>About us</h2>
-		<p><span class="company-name">Online Store</span> &mdash; it is home food delivery</p>
-		<p>You can buy products and order shipping 24 hours a day/7 days a week. And there is benefit of order day delivery!</p>
-		<p class="additional">Food buying, celebration organizing, water and other drinks delivery ordering is quite simple now!</p>
-		<p class="additional">Our products range is huge and growing every day, so we can satisfy even the most demanding customers.</p>
+		<p><span class="company-name">NAIJAGRO</span> &mdash; An Agriculture-based E-commerce Platform</p>
+		<p>Naijagro is a Nigerian-based e-commerce platform, whose mission is to provide a platform accessible to producers and consumers for convenient & fast exchange of goods & services.</p>
+		<p class="additional">The company will enable the provision of high quality, nutritional and healthy farm produce for consumption in both Cities and remote regions of Nigeria.</p>
+		<p class="additional">The idea behind the platform is to provide healthy farm produce to the public and to connect farmers and consumers from all parts of the country seamlessly. </p>
 	</section><!-- /about -->
 	<section class="benefits col-sm-6 col-xs-12">
 		<h2>Our benefits</h2>
@@ -12,19 +12,18 @@
 			<div class="col-sm-4 col-xs-4">
 				<div class="benefit wide-choice">
 					<div class="icon-container sprite"></div>
-					Huge <span class="hidden-xs">all kinds</span> items selection
+					Varieties of crops and livestocks
 				</div>
 			</div>
 			<div class="col-sm-4 col-xs-4">
 				<div class="benefit best-selection">
 					<div class="icon-container sprite"></div>
-					We select only <span class="hidden-xs">the best of them</span><span class="visible-xs-inline">the best</span>
-				</div>
+					Power drill-down search</div>
 			</div>
 			<div class="col-sm-4 col-xs-4">
 				<div class="benefit favorite-clients">
 					<div class="icon-container sprite"></div>
-					Favorite products <br class="visible-xs-inline">for favorite customers
+					Favorite produces <br class="visible-xs-inline">for favorite buyers
 				</div>
 			</div>
 		</div>
@@ -45,11 +44,10 @@
 </div><!-- /company -->
 <div class="copyright row">
 	<div class="copyright-text col-sm-6 col-xs-12">
-		<p>&copy; Online Store: Products and domestic items e-shop, 2014</p>
+		<p>&copy; Online Farm Store: Sells farm produce and provides logistics, 2016</p>
 		<p class="romza-logo">
-			Made in
-			<a href="http://romza.ru/" title="web-replicant solutions studio "Romza"><img src="img/romza-logo.png" alt="web-replicant solutions studio "Romza" class="romza-logo"></a>
-		</p>
+			<img src="{{asset('img/path3013.png')}}" alt="Farm Store" style="width: 150px;height: auto">
+			</p>
 	</div>
 	<div class="counters col-sm-6 hidden-xs">
 		<!-- <div class="yamarket"></div>

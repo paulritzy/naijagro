@@ -1,43 +1,39 @@
 <div id="modal-register" class="modal fade" tabindex="-1" role="dialog">
-	<div class="modal-dialog">
-		<form method="post" action="#" class="form-registration">
+	<div class="modal-dialog" ng-controller="AuthCtrl">
+	
+	<form action="javascript:void(0)" class="form-registration" name="form_registration" method="post" ng-submit="register()">
+   
+	{!! csrf_field() !!}
 	<a href="#" class="form-close flaticon-close19" data-toggle="modal" data-target="#modal-register"></a>
 	<h2>Sign up</h2>
 	<div class="form-logo"></div>
-	<div class="radio-group">
-		<div>
-			<input type="radio" name="auto-generation" id="auto-generation" value="true" class="radio-styled">
-			<label for="auto-generation">Generate login and password</label>
-		</div>
-		<div>
-			<input type="radio" name="auto-generation" id="auto-generation-false" value="false" class="radio-styled" checked>
-			<label for="auto-generation-false">Set login and password</label>
-		</div>
-	</div>
+	
+	
 	<div class="textinput-wrapper">
-		<label for="reg-username">Login</label>
-		<input type="text" name="reg-username" id="reg-username" placeholder="Username" class="textinput-styled" required>
+		<label for="first-name">Full Name</label>
+		<input type="text" ng-model="name" name="name" id="first-name" placeholder="Name" class="textinput-styled">
 	</div>
+	
+	<div class="textinput-wrapper">
+		<label for="email">E-mail</label>
+		<input type="email" ng-model="email" name="email" id="email" placeholder="E-mail" class="textinput-styled" required>
+	</div>
+	
+	<div class="textinput-wrapper">
+		<label for="phone">Phone NUmber</label>
+		<input type="text" ng-model="phone" name="phone" id="phone" placeholder="Phone Number" class="textinput-styled">
+	</div>
+	
 	<div class="textinput-wrapper">
 		<label for="reg-password">Password</label>
-		<input type="password" name="reg-password" id="reg-password" placeholder="Password" class="textinput-styled" required>
+		<input type="password" ng-model="password" name="password" id="reg-password" placeholder="Password" class="textinput-styled" required>
 	</div>
 	<div class="textinput-wrapper">
 		<label for="reg-password-repeat">Repeat password</label>
-		<input type="password" name="reg-password-repeat" id="reg-password-repeat" placeholder="Repeat password" class="textinput-styled" required>
+		<input type="password" ng-model="password_confirmation" name="password_confirmation" id="reg-password-repeat" placeholder="Repeat password" class="textinput-styled" required>
 	</div>
-	<div class="textinput-wrapper">
-		<label for="email">E-mail</label>
-		<input type="email" name="email" id="email" placeholder="E-mail" class="textinput-styled" required>
-	</div>
-	<div class="textinput-wrapper">
-		<label for="first-name">Name</label>
-		<input type="text" name="first-name" id="first-name" placeholder="Name" class="textinput-styled">
-	</div>
-	<div class="textinput-wrapper">
-		<label for="last-name">Surname</label>
-		<input type="text" name="last-name" id="last-name" placeholder="Surname" class="textinput-styled">
-	</div>
+	
+	
 	<div class="anti-robot clearfix">
 		<div class="captcha"><img src="img/captcha.jpg" alt="Captcha"></div>
 		<div class="textinput-wrapper">

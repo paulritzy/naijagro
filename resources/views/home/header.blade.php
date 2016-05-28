@@ -26,18 +26,20 @@
 	<div class="col-sm-8 col-xs-6">
 		<div class="row">
 			<div class="col-sm-6 col-xs-12">
-				<a href="main.html" class="logo">
-					
-					<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+				<div class="clearfix">&nbsp;</div>
+				<a href="{{url('/')}}" class="logo">
 					<img src="{{asset('img/path3013.png')}}" alt="Online Store" style="position: absolute; left: 10px;width: 150px;height: auto">
 				</a>
+				<div class="clearfix"></div>
+				<strong style="color:#fff;float:left;margin: -10px 0px 0px 5px">Agriculture-based e-commerce platform</strong>
 				
 				
 			</div>
 			<div class="delivery col-sm-6 col-xs-12">
 				<span class="text">Orders Reception:</span>
 				<span class="phone">
-					<a href="tel:+2348034309999"><span class="phone-short">08034309999</span></a>
+					<a href="tel:+2348034309999"><span class="phone-short">08012345679</span></a>
 				</span><br>
 				<span class="email">
 					<a href="mailto:order@naijagro.com">order@naijagro.com</a>
@@ -47,21 +49,27 @@
 	</div><!-- /col-sm-8 -->
 	<!-- switching between styles via toggling class "not-authorized" -->
 	<div class="account-controls col-sm-4 col-xs-6">
-		<div class="not-authorized">
-			<div class="logged-in">
+		
+		@if(Auth::check())
+		<div style="position:relative">
 				<button id="btn-authorized">
 					<span class="btn-content">
 						<span class="text">Personal Area:</span>
-						<span class="authorized-user">John Doe</span>
+						<span class="authorized-user">{{Auth::user()->name}}</span>
 					</span>
 				</button>
-				<button id="btn-logout"></button>
+				<a href="{{url('auth/logout')}}" id="btn-logout"></a>
 			</div>
-			<button id="btn-login" data-toggle="modal" data-target="#modal-login"><span class="btn-content"><span class="btn-text">Sign in</span></span></button>
+		@endif
+		
+		@if(!Auth::check())
+		<div class="not-authorized">
+			<button class="logged-in" id="btn-login" data-toggle="modal" data-target="#modal-login"><span class="btn-content"><span class="btn-text">Sign in</span></span></button>
 		</div>
 		<div class="not-authorized">
 			<button id="btn-reg" data-toggle="modal" data-target="#modal-register"><span class="btn-content"><span class="btn-text">Sign up</span></span></button>
 		</div>
+		@endif
 		
 		<div class="basket-container">
 			<button id="btn-basket" class="main-btn">
@@ -84,121 +92,166 @@
 	<ul class="main-menu clearfix">
 		
 		<li class="expandable xs-only pull-left">
-			<a href="catalog.html">Crops</a>
+			<a href="javascript:void(0)">Crops</a>
 			<div class="mobile-link">
-				<a href="catalog.html" class="flaticon-thin4"></a>
+				<a href="javascript:void(0)" class="flaticon-thin4"></a>
 			</div>
 			<div class="submenu-wrapper expand-content clearfix">
 				<div class="main-menu-sub expandable xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<a href="javascript:void(0)" class="menu-lvl1-link">CASH CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
 					<ul class="expand-content">
-						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
-						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
+						<li><a href="javascript:void(0)">Cocoa<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Shell<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Cotton<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Rubber<sup class="number-of-items">4</sup></a></li> 
+						<li><a href="javascript:void(0)">Oil palm<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Robusta<sup class="number-of-items">4</sup></a></li> 
+						<li><a href="javascript:void(0)">Timber<sup class="number-of-items">4</sup></a></li>
 					</ul>
 				</div>
 				<div class="main-menu-sub expandable xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<a href="javascript:void(0)" class="menu-lvl1-link">FRUIT CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
 					<ul class="expand-content">
-						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
-						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
-						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
-						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
-						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
-						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
-						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
+						<li><a href="javascript:void(0)">Grape<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Orange<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Apple<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Water melon<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Mango<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Cashew<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Cherry<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Banana<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Pineapple<sup class="number-of-items">4</sup></a></li>
+						<li><a href="javascript:void(0)">Pawpaw<sup class="number-of-items">4</sup></a></li>
 					</ul>
 				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<a href="javascript:void(0)" class="menu-lvl1-link">BEVERAGE CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
 					<ul class="expand-content">
-						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html">Hob<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
-						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
-					</ul>
+						<li><a href="javascript:void(0)">Tea<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Coffee<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Cocoa<sup class="number-of-items">4</sup></a></li>
+						</ul>
 				</div>
 				<div class="main-menu-sub expandable xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<a href="javascript:void(0)" class="menu-lvl1-link">FORAGE CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
 					<ul class="expand-content">
-						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
-						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
-						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
-						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
-						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
-						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
-						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
-					</ul>
+						<li><a href="javascript:void(0)">Grasses<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Legumes<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Crucifer<sup class="number-of-items">4</sup></a></li>
+						</ul>
 				</div><!-- /main-menu-sub --><div class="main-menu-sub expandable xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<a href="javascript:void(0)" class="menu-lvl1-link">VEGETABLE CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
 					<ul class="expand-content">
-						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
-						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
-					</ul>
+						<li><a href="javascript:void(0)">Tomatoes<sup class="number-of-items">4</sup></a></li> 
+<li><a href="javascript:void(0)">Onions<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Carrot<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Cucumber<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Spinach<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Cabbage<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Broccoli<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Pepper<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Okra<sup class="number-of-items">4</sup></a></li>
+						</ul>
 				</div>
 				<div class="main-menu-sub expandable xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<a href="javascript:void(0)" class="menu-lvl1-link">OIL CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
 					<ul class="expand-content">
-						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
-						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
-						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
-						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
-						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
-						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
-						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
-					</ul>
-				</div><!-- /main-menu-sub -->
-			</div><!-- /submenu-wrapper -->
+						<li><a href="javascript:void(0)">Flax<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Sunflower<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Sesame<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Castor bean<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Mustard<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Cotton seed<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Corn and grain sorghum<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Safflower<sup class="number-of-items">4</sup></a></li>
+						</ul>
+				</div>
+				
+				<div class="main-menu-sub expandable xs-only">
+					<a href="javascript:void(0)" class="menu-lvl1-link">LEGUMES</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="javascript:void(0)">Groundnut<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Cowpea<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Soybeans<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Lima beans<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Pigeon peas<sup class="number-of-items">4</sup></a></li>
+						</ul>
+				</div>
+				
+				<div class="main-menu-sub expandable xs-only">
+					<a href="javascript:void(0)" class="menu-lvl1-link">CEREAL OR GRAIN CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+						<li><a href="javascript:void(0)">Wheat<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Oat<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Barley<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Rice<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Maize<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Sorghum<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Millet<sup class="number-of-items">4</sup></a></li>
+						</ul>
+				</div>
+				
+				<div class="main-menu-sub expandable xs-only">
+					<a href="javascript:void(0)" class="menu-lvl1-link">ROOT AND TUBER CROPS</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
+					<ul class="expand-content">
+					<li><a href="javascript:void(0)">Sugar-beets<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Sweet-potatoes<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Yam<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Cassava<sup class="number-of-items">4</sup></a></li>
+<li><a href="javascript:void(0)">Cocoyam<sup class="number-of-items">4</sup></a></li>
+						</ul>
+				</div>
+							</div><!-- /submenu-wrapper -->
 		</li>
 	
 	<li class="expandable xs-only pull-left">
-			<a href="catalog.html">Livestocks</a>
+			<a href="javascript:void(0)">Livestocks</a>
 			<div class="mobile-link">
-				<a href="catalog.html" class="flaticon-thin4"></a>
+				<a href="javascript:void(0)" class="flaticon-thin4"></a>
 			</div>
 			<div class="submenu-wrapper expand-content clearfix">
 				<div class="main-menu-sub expandable xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For kitchen</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
-					<ul class="expand-content">
-						<li><a href="catalog.html">Dishwashing<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html" class="active">Hob<sup class="number-of-items">4</sup></a></li>
-						<li><a href="catalog.html">Windows cleaning<sup class="number-of-items">44</sup></a></li>
-						<li><a href="catalog.html">For hood<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">Microwave cleaning<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For the floor<sup class="number-of-items">24</sup></a></li>
-						<li><a href="catalog.html">For fridge<sup class="number-of-items">38</sup></a></li>
-					</ul>
+					<a href="javascript:void(0)" class="menu-lvl1-link">Domestics</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
+				
+				<ul class="expand-content">
+				<li><a href="javascript:void(0)">Dog<sup class="number-of-items">4</sup></a></li> 
+				<li><a href="javascript:void(0)">Cattle<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Cow<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Goat<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Guinea fowl<sup class="number-of-items">4</sup></a></li> 
+				<li><a href="javascript:void(0)">Rat<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Chicken<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Bird<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Rabbit<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Pig<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Fish<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Cat<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Monkey<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Snail<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Ram<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Sheep<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Turkey<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Duck<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Pigeon<sup class="number-of-items">4</sup></a></li>
+				<li><a href="javascript:void(0)">Horse<sup class="number-of-items">4</sup></a></li>
+				</ul>
 				</div>
 				<div class="main-menu-sub xs-only">
-					<a href="catalog.html" class="menu-lvl1-link">For bathroom</a>
-					<a href="catalog.html" class="mobile-link flaticon-thin4"></a>
+					<a href="javascript:void(0)" class="menu-lvl1-link">Non-Domestics</a>
+					<a href="javascript:void(0)" class="mobile-link flaticon-thin4"></a>
 					<ul class="expand-content">
-						<li><a href="catalog.html">For acrylic baths<sup class="number-of-items">11</sup></a></li>
-						<li><a href="catalog.html">For cast iron baths<sup class="number-of-items">23</sup></a></li>
-						<li><a href="catalog.html">For mirrors<sup class="number-of-items">55</sup></a></li>
-						<li><a href="catalog.html">For washing machines<sup class="number-of-items">8</sup></a></li>
-						<li><a href="catalog.html">For floor cleaning<sup class="number-of-items">76</sup></a></li>
-						<li><a href="catalog.html">Flavours<sup class="number-of-items">99</sup></a></li>
-						<li><a href="catalog.html">For hand wash<sup class="number-of-items">17</sup></a></li>
-					</ul>
+						<li><a href="javascript:void(0)">Snake<sup class="number-of-items">4</sup></a></li>
+				
+						</ul>
 				</div><!-- /main-menu-sub -->
 			</div><!-- /submenu-wrapper -->
 		</li>
@@ -209,15 +262,20 @@
 		
 </nav>
 	
+	<!-- 
+	
 	<div class="text-center">
 <input type="search" name="search-field" style="width: 600px;height: 40px;z-index: 9999" placeholder="I need...">
 	
 </div>
+	
+	position: absolute;top: 0px;left: 0px;
+	 -->
+		 
 
+<!-- 
 
-
-
-<!-- popups and modals-->
+popups and modals-->
 
 @include('home.modal_login')
 @include('home.modal_registration')

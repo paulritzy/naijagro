@@ -221,8 +221,7 @@ $( document ).ready(function() {
 		doResize = setTimeout(onResizeComplete, 300);
 	});
 
-	var formLogin = $('.form-login');
-	var formReg = $('.form-registration');
+	
 	var formSearch = $('.form-search');
 		
 	var orderLinks = $('.order-number > a');
@@ -758,32 +757,6 @@ $( document ).ready(function() {
 	$('.order-making-form').submit(function(e){
 		e.preventDefault();
 		if($(this).checkValidity()) window.location.href="order-making-2.php";
-	});
-
-	formLogin.submit(function(e){
-		e.preventDefault();
-		$(this).addClass('submitted');
-		var login = formLogin.find('#login-username');
-		var pwd = formLogin.find('#login-password');
-		if (!login.val() || !pwd.val()){
-			//check result will be here
-		}
-		else {
-			window.location.href = "profile-settings.php";
-		}
-	});
-	
-	formReg.submit(function(e){
-		e.preventDefault();
-		$(this).addClass('submitted');
-		var login = formReg.find('#reg-username');
-		var pwd = formReg.find('#reg-password');
-		if (!login.val() || !pwd.val()){
-			//check result will be here
-		}
-		else {
-			window.location.href = "profile-settings.php";
-		}
 	});
 
 

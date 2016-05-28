@@ -7,66 +7,76 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
 
-class AuthController extends Controller
-{
-    /*
-    |--------------------------------------------------------------------------
-    | Registration & Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users, as well as the
-    | authentication of existing users. By default, this controller uses
-    | a simple trait to add these behaviors. Why don't you explore it?
-    |
-    */
+//$user = Auth::user();
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+class AuthController extends Controller{
+	/*
+	 |--------------------------------------------------------------------------
+	 | Registration & Login Controller
+	 |--------------------------------------------------------------------------
+	 |
+	 | This controller handles the registration of new users, as well as the
+	 | authentication of existing users. By default, this controller uses
+	 | a simple trait to add these behaviors. Why don't you explore it?
+	 |
+	 */
 
-    /**
-     * Where to redirect users after login / registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/';
+	use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+	 
+	/**
+	 * Create a new authentication controller instance.
+	 *
+	 * @return void
+	 */
+	public function __construct() {
+		
+		$this->middleware('guest', ['except' => 'getLogout']);
+	}
 
-    /**
-     * Create a new authentication controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
-    }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
-        ]);
-    }
+	public function authenticate(Request $request){
+		//TokenMismatchException
+		
+		if (\Auth::attempt(['email' => $request->email, 'password' => $request->password],$request->remember)) {
+			
+			return response()->json(["status"=>true,"msg"=>""],200);
+			
+		}
+		 
+		return response()->json(["status"=>false,"msg"=>"Wrong email/password combination."],200);
+	}
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return User
-     */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
-    }
+
+	/**
+	 * Get a validator for an incoming registration request.
+	 *
+	 * @param  array  $data
+	 * @return \Illuminate\Contracts\Validation\Validator
+	 */
+	protected function validator(array $data)
+	{
+		return Validator::make($data, [
+				'name' => 'required|max:255',
+				'email' => 'required|email|max:255|unique:users',
+				'password' => 'required|confirmed|min:6',
+		]);
+	}
+
+	/**
+	 * Create a new user instance after a valid registration.
+	 *
+	 * @param  array  $data
+	 * @return User
+	 */
+	protected function create(array $data)
+	{
+		return User::create([
+				'name' => $data['name'],
+				'email' => $data['email'],
+				'phone' => $data['phone'],
+				'password' => bcrypt($data['password']),
+		]);
+	}
 }

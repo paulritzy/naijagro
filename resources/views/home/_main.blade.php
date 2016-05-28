@@ -1,3 +1,19 @@
+<div class="flexslider" style="margin: -25px -15px">
+          <ul class="slides">
+            <li>
+  	    	    <img src="{{asset('img/banners/slide1.jpg')}}" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="{{asset('img/banners/slide2.jpg')}}" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="{{asset('img/crops/2000px-Bananas.svg.png')}}" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="{{asset('img/crops/watermelon-ogr-2.jpg')}}" />
+  	    		</li>
+          </ul>
+        </div>
 
 <section class="specials row hidden-xs">
 	<button class="consultation">Online consultation</button>
@@ -5,7 +21,7 @@
 	<div class="col-sm-4">
 		<div class="special-offer masl">
 			<div class="img-container">
-				<img src="{{asset('img/crops/Cocoa400_275.jpg')}}" alt="Lorem ipsum!" title="Lorem ipsum!">
+				<img src="{{asset('img/crops/Product-TI2.jpg')}}" alt="Lorem ipsum!" title="Lorem ipsum!">
 			</div>
 			<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis and only for <span class="price">$10</span></a></p>
 		</div>
@@ -13,7 +29,7 @@
 	<div class="col-sm-4">
 		<div class="special-offer cakes">
 			<div class="img-container">
-				<img src="{{asset('img/crops/Grape-Wall400_275.jpg')}}" alt="Discount for all sweet goods" title="Discount for all sweet goods">
+				<img src="{{asset('img/crops/Cocoa400_275.jpg')}}" alt="Discount for all sweet goods" title="Discount for all sweet goods">
 			</div>
 			<p><a href="#">Champion discount &mdash; 30% of all sweet goods, cakes and pastries.</a></p>
 		</div>
@@ -21,7 +37,7 @@
 	<div class="col-sm-4">
 		<div class="special-offer vitamins">
 			<div class="img-container">
-				<img src="{{asset('img/crops/Cocoa400_275.jpg')}}" alt="Restore the vitamins supply!" title="Restore the vitamins supply!">
+				<img src="{{asset('img/crops/Product-TI.jpg')}}" alt="Restore the vitamins supply!" title="Restore the vitamins supply!">
 			</div>
 			<p><a href="#">Restore the supply of vitamins! Fresh fruits and vegetables for the whole family!</a></p>
 		</div>
